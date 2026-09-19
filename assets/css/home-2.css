@@ -58,13 +58,13 @@
     }
 
     .h2-hero-h1 {
-      font-size: clamp(3rem, 7vw, 6.5rem);
+      font-size: clamp(2.25rem, 4.2vw, 3.85rem);
       font-weight: 900;
       color: #FFFFFF;
-      line-height: 1.0;
-      letter-spacing: -0.04em;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
       margin-bottom: 1.5rem;
-      max-width: 900px;
+      max-width: 800px;
       margin-inline: auto;
     }
 
@@ -966,7 +966,7 @@
         padding: calc(var(--header-h) + 2rem) 0 3rem;
       }
       .h2-hero-h1 {
-        font-size: clamp(2rem, 7vw, 3.2rem);
+        font-size: clamp(1.85rem, 5vw, 2.6rem);
       }
       .h2-hero-p {
         font-size: 1rem;
@@ -1101,7 +1101,7 @@
     /* Standard Mobile Phones (<= 480px): Pixel 7/8/9/10, iPhone 12/13/14/15/16 Pro / Pro Max */
     @media (max-width: 480px) {
       .h2-hero-h1 {
-        font-size: clamp(1.85rem, 8.5vw, 2.5rem);
+        font-size: clamp(1.6rem, 7vw, 2.1rem);
       }
       .h2-hero-actions {
         flex-direction: column;

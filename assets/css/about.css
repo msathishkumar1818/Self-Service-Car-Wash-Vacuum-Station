@@ -34,9 +34,9 @@
 
 .about-hero h1 {
   color: #fff;
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(1.85rem, 3.4vw, 3.1rem);
   font-weight: 900;
-  line-height: 1.05;
+  line-height: 1.15;
   margin-bottom: 1.5rem;
 }
 
