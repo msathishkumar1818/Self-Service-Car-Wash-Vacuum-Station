@@ -1,0 +1,364 @@
+/* ============================================================
+   SPARKWASH — ULTRA RESPONSIVE SYSTEM
+   Engineered for:
+   - Desktop & Ultrawide (1200px - 1920px+)
+   - iPad Pro 12.9" & 13" (1024px - 1199px)
+   - iPad 10.2", iPad Air, iPad Pro 11", Tablets (768px - 1023px)
+   - Large Phones: iPhone 14/15/16 Pro Max, Pixel 7/8/9/10 Pro (412px - 430px)
+   - Standard Phones: iPhone 12/13/14/15/16, Pixel 7/8/9 (375px - 410px)
+   - Compact Phones: iPhone SE, Small Androids (320px - 360px)
+   ============================================================ */
+
+/* ─── GLOBAL OVERFLOW & MEDIA SAFEGUARDS ──────────────────── */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ─── 1199px and below (iPad Pro 12.9" / 13", Small Laptops) ─── */
+@media (max-width: 1199px) {
+  :root {
+    --container-max: 1080px;
+  }
+
+  .header-nav {
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.88rem;
+  }
+
+  .packages-grid {
+    gap: 1.5rem;
+  }
+
+  .steps-layout {
+    gap: 3rem;
+  }
+}
+
+/* ─── 1024px and below (iPad, iPad Air, Tablets) ──────────── */
+@media (max-width: 1024px) {
+  .header-nav,
+  .header-controls .btn-primary,
+  .ctrl-btn-login {
+    display: none !important;
+  }
+
+  .menu-btn {
+    display: flex !important;
+  }
+
+  .header-controls {
+    gap: 0.45rem;
+  }
+
+  /* Grid adaptations for tablets */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.25rem;
+  }
+
+  .about-hero-inner,
+  .team-strip-inner,
+  .contact-layout,
+  .franchise-layout,
+  .pricing-cards-grid,
+  .faq-grid,
+  .svc-features-grid,
+  .steps-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .loc-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .guarantee-box {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .guarantee-icon {
+    margin: 0 auto;
+  }
+
+  .cta-banner {
+    grid-template-columns: 1fr !important;
+    padding: 3rem 2.5rem;
+  }
+
+  .cta-actions {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* ─── 768px and below (Small Tablets & Large Phones) ───────── */
+@media (max-width: 768px) {
+  :root {
+    --header-h: 58px;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Section padding scales down comfortably */
+  .section-pad {
+    padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+  }
+
+  /* Footer single column on phones */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.25rem 0 1.5rem;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  /* Hero adjustments */
+  .hero-home {
+    min-height: auto;
+    padding: calc(var(--header-h) + 2.5rem) 0 3.5rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .hero-img-wrap {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .hero-badge-card {
+    left: 0;
+    bottom: -1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  /* Cards single column */
+  .packages-grid,
+  .reviews-grid,
+  .values-grid,
+  .loc-grid,
+  .vending-grid,
+  .team-stat-row,
+  .h2-services-mosaic,
+  .h2-stations-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .svc-tile,
+  .svc-tile.large {
+    grid-column: span 1 !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Scroll-to-top position */
+  #scroll-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+  }
+
+  [dir="rtl"] #scroll-top {
+    right: auto;
+    left: 1.25rem;
+  }
+}
+
+/* ─── 540px and below (Pixel 7/8/9/10, iPhone 12/13/14/15/16 Pro) ─── */
+@media (max-width: 540px) {
+  /* Compact Login Button in Navbar: hide text, show icon square */
+  .ctrl-login-text {
+    display: none !important;
+  }
+
+  .ctrl-btn-login {
+    padding: 0 !important;
+    width: 36px !important;
+    justify-content: center !important;
+  }
+
+  .header-controls {
+    gap: 0.35rem;
+  }
+
+  .brand-tagline {
+    display: block !important;
+    font-size: 0.58rem;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-banner {
+    padding: 2.25rem 1.5rem;
+  }
+
+  .cta-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .addon-table th,
+  .addon-table td {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.84rem;
+  }
+
+  .hours-table td {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.86rem;
+  }
+}
+
+/* ─── 425px and below (Standard Mobile Screens) ───────────── */
+@media (max-width: 425px) {
+  :root {
+    --header-h: 56px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .brand-name {
+    font-size: 0.94rem;
+  }
+
+  .brand-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .brand-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-lg {
+    font-size: 0.95rem;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .footer-legal {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .bay-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-badge-card {
+    position: static;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+/* ─── 360px and below (iPhone SE & Compact Phones) ────────── */
+@media (max-width: 360px) {
+  .brand-name {
+    font-size: 0.88rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.52rem;
+  }
+
+  .header-controls {
+    gap: 0.25rem;
+  }
+
+  .ctrl-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.68rem;
+  }
+
+  .ctrl-btn-login {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .menu-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mobile-nav-link {
+    font-size: 1rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .p-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .p-price {
+    font-size: 2.75rem;
+  }
+}
+
+/* ─── PRINT MEDIA ─────────────────────────────────────────── */
+@media print {
+  #site-header,
+  #site-loader,
+  #mobile-menu,
+  #scroll-top {
+    display: none !important;
+  }
+
+  .page-wrap {
+    padding-top: 0;
+  }
+}

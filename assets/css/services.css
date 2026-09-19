@@ -1,0 +1,749 @@
+/* ============================================================
+   SPARKWASH — SERVICES PAGE STYLES
+   ============================================================ */
+
+.svc-page-hero {
+  background: 
+    linear-gradient(180deg, rgba(6, 14, 36, 0.88) 0%, rgba(6, 14, 36, 0.78) 50%, rgba(6, 14, 36, 0.95) 100%),
+    url('../images/services/foam-wash.jpg') center/cover no-repeat;
+  padding: calc(var(--header-h) + 5rem) 0 5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.svc-page-hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(ellipse, rgba(0, 194, 255, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.svc-page-hero h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.svc-page-hero p {
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 520px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumb a {
+  color: var(--clr-cyan);
+  transition: opacity var(--ease-fast);
+}
+
+.breadcrumb a:hover {
+  opacity: 0.8;
+}
+
+.breadcrumb svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ── SERVICES GRID ── */
+.svc-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.svc-feature-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1.5px solid var(--border-card);
+  transition: all var(--ease-med);
+  min-height: 340px;
+}
+
+.svc-feature-block:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--clr-cyan);
+}
+
+.svc-feature-block.reverse {
+  direction: rtl;
+}
+
+.svc-feature-block.reverse > * {
+  direction: ltr;
+}
+
+.svc-feature-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.svc-feature-block:hover .svc-feature-img img {
+  transform: scale(1.05);
+}
+
+.svc-feature-body {
+  padding: 2rem 2rem;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.svc-feature-body .eyebrow {
+  margin-bottom: 0.25rem;
+}
+
+.svc-feature-body h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--txt-heading);
+}
+
+.svc-feature-body p {
+  font-size: 0.88rem;
+  color: var(--txt-muted);
+  line-height: 1.7;
+}
+
+.svc-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.svc-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: var(--txt-body);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.svc-feature-list li svg {
+  width: 14px;
+  height: 14px;
+  color: var(--clr-cyan);
+  flex-shrink: 0;
+}
+
+/* Equipment Specs */
+.specs-section {
+  background: var(--clr-navy-deep);
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.spec-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all var(--ease-med);
+}
+
+.spec-card:hover {
+  border-color: rgba(0, 194, 255, 0.25);
+  background: rgba(0, 194, 255, 0.05);
+}
+
+.spec-card svg {
+  width: 40px;
+  height: 40px;
+  color: var(--clr-cyan);
+  margin: 0 auto 1rem;
+}
+
+.spec-card h4 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.spec-card p {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.90);
+  line-height: 1.65;
+}
+
+/* ─── VENDING ADD-ON SHOWCASE ─────────────────────────────── */
+.vending-section-header {
+  margin-bottom: 2.5rem;
+}
+
+.vending-showcase-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+/* Feature Vending Machine Card */
+.vending-feature-banner {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: var(--clr-navy-deep);
+  border: 1.5px solid var(--border-card);
+  box-shadow: var(--shadow-md);
+  min-height: 490px;
+  transition: border-color var(--ease-med), transform var(--ease-med), box-shadow var(--ease-med);
+}
+
+.vending-feature-banner:hover {
+  border-color: var(--clr-cyan);
+  box-shadow: 0 12px 32px rgba(0, 194, 255, 0.15);
+}
+
+.vending-banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform 0.7s ease;
+  display: block;
+}
+
+.vending-feature-banner:hover .vending-banner-img {
+  transform: scale(1.04);
+}
+
+.vending-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(6, 14, 36, 0.96) 0%,
+    rgba(6, 14, 36, 0.72) 45%,
+    rgba(6, 14, 36, 0.25) 75%,
+    rgba(6, 14, 36, 0.1) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.vending-banner-badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(6, 14, 36, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 194, 255, 0.35);
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.vending-banner-badge .badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--clr-cyan);
+  box-shadow: 0 0 8px var(--clr-cyan);
+}
+
+.vending-banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1.75rem;
+  color: #fff;
+}
+
+.vending-banner-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-cyan);
+  margin-bottom: 0.35rem;
+}
+
+.vending-banner-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.vending-banner-desc {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.vending-banner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.vending-banner-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.74rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.vending-banner-tag svg {
+  width: 12px;
+  height: 12px;
+  color: var(--clr-cyan);
+}
+
+/* Products Grid */
+.vending-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Individual Product Card */
+.vend-product-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--ease-fast), border-color var(--ease-fast), box-shadow var(--ease-fast);
+}
+
+.vend-product-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--clr-cyan);
+  box-shadow: var(--shadow-md);
+}
+
+.vend-product-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: var(--clr-navy-deep);
+}
+
+.vend-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.vend-product-card:hover .vend-product-img {
+  transform: scale(1.06);
+}
+
+.vend-product-badge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  background: rgba(6, 14, 36, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-size: 0.72rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--clr-cyan);
+  border: 1px solid rgba(0, 194, 255, 0.35);
+  z-index: 2;
+}
+
+.vend-product-body {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.vend-product-info h4 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--txt-heading);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.vend-product-info p {
+  font-size: 0.78rem;
+  color: var(--txt-muted);
+  line-height: 1.45;
+}
+
+.vend-product-footer {
+  margin-top: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border-card);
+}
+
+.vend-product-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  color: #10b981;
+}
+
+.vend-product-status .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+.vend-product-tag {
+  font-size: 0.72rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--clr-cyan);
+  background: rgba(0, 194, 255, 0.08);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.vending-products-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.vending-action-bar {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ─── FLEET WASHING SECTION ───────────────────────────────── */
+.fleet-img-wrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: var(--shadow-lg);
+  border: 1.5px solid var(--border-card);
+}
+
+.fleet-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fleet-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 2rem 0;
+}
+
+.fleet-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--txt-body);
+}
+
+.fleet-feature-item svg {
+  color: var(--clr-cyan);
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+/* Accessibility info strip */
+.access-strip {
+  background: linear-gradient(90deg, var(--clr-navy), var(--clr-royal-dark));
+  padding: 2.5rem 0;
+}
+
+.access-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.access-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.access-item svg {
+  width: 22px;
+  height: 22px;
+  color: var(--clr-cyan-light);
+  flex-shrink: 0;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS (Desktop, iPad, iPad Pro, Mobile, Pixel, iPhone) ─── */
+
+/* iPad Pro 12.9" & 13", Small Laptops (1025px - 1199px) */
+@media (max-width: 1199px) {
+  .vending-showcase-layout {
+    grid-template-columns: 320px 1fr;
+    gap: 1.35rem;
+  }
+  .vending-products-grid {
+    gap: 1rem;
+  }
+}
+
+/* iPad, iPad Air, Tablets (769px - 1024px) */
+@media (max-width: 1024px) {
+  .svc-features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .svc-feature-block {
+    grid-template-columns: 1fr 1.2fr;
+    min-height: auto;
+  }
+  .svc-feature-img {
+    min-height: 260px;
+  }
+  .svc-feature-block.reverse {
+    direction: ltr;
+  }
+  .specs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Vending Showcase on iPad */
+  .vending-showcase-layout {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .vending-feature-banner {
+    min-height: 320px;
+    max-height: 360px;
+  }
+  .vending-banner-content {
+    padding: 1.75rem;
+  }
+  .vending-banner-title {
+    font-size: 1.6rem;
+  }
+  .vending-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+  }
+  .access-strip-inner {
+    gap: 2rem;
+  }
+}
+
+/* Small Tablets & Large Phones: Pixel 7/8/9/10 Pro, iPhone 14/15/16 Pro Max (541px - 768px) */
+@media (max-width: 768px) {
+  .svc-feature-block {
+    grid-template-columns: 1fr;
+  }
+  .svc-feature-img {
+    min-height: 220px;
+  }
+  .vending-feature-banner {
+    min-height: 270px;
+    border-radius: var(--radius-lg);
+  }
+  .vending-banner-title {
+    font-size: 1.4rem;
+  }
+  .vending-banner-desc {
+    font-size: 0.82rem;
+  }
+  .vending-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+  .vend-product-body {
+    padding: 0.95rem;
+  }
+  .vend-product-info h4 {
+    font-size: 0.9rem;
+  }
+  .vend-product-info p {
+    font-size: 0.76rem;
+  }
+  .access-strip-inner {
+    gap: 1.25rem;
+  }
+  .vending-action-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .vending-action-bar .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Standard & Compact Mobile: iPhone 12/13/14/15/16, Pixel 7/8/9/10 (361px - 540px) */
+@media (max-width: 540px) {
+  .specs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+  .spec-card {
+    padding: 1.35rem 1rem;
+  }
+  .spec-card svg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.65rem;
+  }
+  .spec-card h4 {
+    font-size: 0.88rem;
+  }
+  .spec-card p {
+    font-size: 0.76rem;
+  }
+  .vending-feature-banner {
+    min-height: 240px;
+  }
+  .vending-banner-badge {
+    top: 0.85rem;
+    left: 0.85rem;
+    font-size: 0.68rem;
+    padding: 0.25rem 0.65rem;
+  }
+  .vending-banner-content {
+    padding: 1.35rem 1rem;
+  }
+  .vending-banner-title {
+    font-size: 1.22rem;
+  }
+  .vending-banner-desc {
+    font-size: 0.78rem;
+    margin-bottom: 0.75rem;
+  }
+  .vending-banner-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .vending-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+  .vend-product-body {
+    padding: 0.75rem 0.65rem;
+  }
+  .vend-product-info h4 {
+    font-size: 0.82rem;
+  }
+  .vend-product-info p {
+    font-size: 0.72rem;
+  }
+  .vend-product-footer {
+    display: none; /* Keep mobile cards neat and compact without overflow */
+  }
+}
+
+/* Compact Phones: iPhone SE, Small Android (<= 360px) */
+@media (max-width: 360px) {
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+  .vending-products-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .vend-product-footer {
+    display: flex;
+  }
+}

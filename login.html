@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Login â€” SparkWash | Self-Service Car Wash & Vacuum Station</title>
+  <meta name="description" content="Sign in to your SparkWash account to manage wash passes, contactless bay payments, and membership perks." />
+  <link rel="canonical" href="login.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <link rel="stylesheet" href="assets/css/login.css" />
+  <script src="assets/js/theme-init.js"></script>
+</head>
+<body class="auth-page">
+
+  <!-- Loader -->
+  <div id="site-loader" role="status" aria-label="Loading SparkWash">
+    <div class="loader-brand">
+      <svg class="loader-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 17h14M5 17a2 2 0 01-2-2V9a2 2 0 012-2h1l2-3h8l2 3h1a2 2 0 012 2v6a2 2 0 01-2 2M5 17a2 2 0 104 0M15 17a2 2 0 104 0"/>
+        <path d="M3 13.5h1M20 13.5h1"/>
+      </svg>
+      <div class="loader-name">Spark<span>Wash</span></div>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Fullscreen Centered Auth Main Area (NO Header & NO Footer & NO Page Scroll) -->
+  <main class="auth-fullscreen-wrap" role="main">
+
+    <div class="auth-card-shell animate-fadein">
+
+      <!-- Left Side Value Proposition Banner (Desktop / Large Viewports) -->
+      <div class="auth-card-banner">
+        <div class="auth-card-banner-content">
+          <div class="eyebrow" style="color:var(--clr-cyan);font-size:0.75rem;margin-bottom:0.5rem;">SparkWash Portal</div>
+          <h1>Wash Smarter with Your SparkWash Pass</h1>
+          <p>Sign in to manage your monthly pass, track prepaid bay minutes, and enjoy touchless station activation across all 12 locations.</p>
+
+          <div class="auth-perks-list">
+            <div class="auth-perk-row">
+              <div class="auth-perk-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Instant touchless RFID & QR bay activation</span>
+            </div>
+            <div class="auth-perk-row">
+              <div class="auth-perk-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>10% reward cash back on all self-wash cycles</span>
+            </div>
+            <div class="auth-perk-row">
+              <div class="auth-perk-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Live bay availability & vacuum queue tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-card-banner-foot">
+          <span>Open 24/7 â€¢ 12 Locations â€¢ 24,000+ Active Drivers</span>
+        </div>
+      </div>
+
+      <!-- Right Side Interactive Sign In Form -->
+      <div class="auth-card-form">
+
+        <!-- Controls (Dark Mode & RTL) INSIDE the section/card -->
+        <div class="auth-card-controls">
+          <button class="ctrl-btn" data-dir-toggle aria-label="Switch to RTL" title="Toggle RTL">RTL</button>
+          <button class="ctrl-btn" data-dark-toggle aria-label="Switch to dark mode" title="Toggle Dark/Light Mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
+
+        <!-- Brand Logo & Brand Text placed directly ABOVE "Welcome Back" -->
+        <a href="index.html" class="auth-form-brand" aria-label="SparkWash Home">
+          <div class="brand-icon" aria-hidden="true">
+            <img src="assets/images/logo.jpg" alt="SparkWash Logo" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">SparkWash</span>
+            <span class="brand-tagline">Car Wash & Vacuum</span>
+          </div>
+        </a>
+
+        <!-- Welcome Head -->
+        <div class="auth-form-head">
+          <h2>Welcome Back</h2>
+          <p>Please enter your credentials to access your account.</p>
+        </div>
+
+        <!-- Role Selector Tabs -->
+        <div class="auth-tabs-group" role="tablist" aria-label="Login Account Type">
+          <button class="auth-tab-pill active" role="tab" aria-selected="true" id="tab-driver" type="button">Customer / Driver</button>
+          <button class="auth-tab-pill" role="tab" aria-selected="false" id="tab-fleet" type="button">Fleet / Business</button>
+        </div>
+
+        <form id="login-form" novalidate>
+
+          <!-- Email or Phone -->
+          <div class="auth-field">
+            <label for="auth-email" class="auth-label">Email or Mobile Number</label>
+            <div class="auth-input-container">
+              <svg class="auth-input-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <input type="text" id="auth-email" name="login_id" class="auth-text-input" placeholder="name@example.com or +1 (555) 000-0000" required autocomplete="username" />
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="auth-field">
+            <label for="auth-password" class="auth-label">Password</label>
+            <div class="auth-input-container">
+              <svg class="auth-input-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0110 0v4"/>
+              </svg>
+              <input type="password" id="auth-password" name="password" class="auth-text-input" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" required autocomplete="current-password" />
+              <button type="button" class="auth-pwd-toggle" id="toggle-pwd-btn" aria-label="Show password">
+                <svg id="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Remember Me & Forgot Password -->
+          <div class="auth-extra-row">
+            <label class="auth-remember-wrap">
+              <input type="checkbox" id="remember-me" name="remember" />
+              <span>Remember me</span>
+            </label>
+            <a href="#forgot" class="auth-forgot-btn" id="forgot-link">Forgot password?</a>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary auth-submit-btn" id="submit-btn">
+            <span>Sign In to SparkWash</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+
+        </form>
+
+        <div class="auth-split-line">
+          <span>Or continue with</span>
+        </div>
+
+        <!-- Social Sign-in Buttons -->
+        <div class="auth-social-row">
+          <button type="button" class="auth-social-item" aria-label="Sign in with Google">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.26v3.15C3.27 21.37 7.34 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27A7.01 7.01 0 014.88 12c0-.79.14-1.57.4-2.27V6.58H1.26A11.96 11.96 0 000 12c0 1.92.45 3.74 1.26 5.42l4.02-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.27 2.63 1.26 6.58l4.02 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <span>Google</span>
+          </button>
+          <button type="button" class="auth-social-item" aria-label="Sign in with Apple">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 0.93-2.85-.9.04-2 .6-2.65 1.35-.58.67-1.09 1.74-.95 2.77 1.01.08 2.05-.52 2.67-1.27z"/>
+            </svg>
+            <span>Apple</span>
+          </button>
+        </div>
+
+        <div class="auth-bottom-switch">
+          <span>Don't have a SparkWash pass?</span>
+          <a href="pricing.html">Sign up for free</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
+

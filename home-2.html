@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home 2 — SparkWash | Self-Service Car Wash & Vacuum Station</title>
+  <meta name="description"
+    content="SparkWash — Discover a new way to clean your car. Premium self-service bays, 24/7 access, and cutting-edge equipment at all locations." />
+  <link rel="canonical" href="home-2.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <link rel="stylesheet" href="assets/css/home-2.css" />
+  <script src="assets/js/theme-init.js"></script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Loader -->
+  <div id="site-loader" role="status" aria-label="Loading SparkWash">
+    <div class="loader-brand">
+      <svg class="loader-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M7 16.5c-1.5 0-3-1.5-3-3s1.5-3 3-3h10c1.5 0 3 1.5 3 3s-1.5 3-3 3H7z" />
+        <path d="M7 10.5V7a5 5 0 0110 0v3.5" />
+        <circle cx="9" cy="19" r="1" />
+        <circle cx="15" cy="19" r="1" />
+      </svg>
+      <div class="loader-name">Spark<span>Wash</span></div>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Header (identical shared header) -->
+  <header id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-brand" aria-label="SparkWash Home">
+          <div class="brand-icon" aria-hidden="true">
+            <img src="assets/images/logo.jpg" alt="SparkWash Logo" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">SparkWash</span>
+            <span class="brand-tagline">Car Wash & Vacuum</span>
+          </div>
+        </a>
+
+        <nav class="header-nav" role="navigation" aria-label="Primary navigation">
+          <div class="nav-item" data-dropdown>
+            <button class="nav-link active" aria-expanded="false" aria-haspopup="true" id="nav-home-btn">
+              Home
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="nav-dropdown" role="menu" aria-labelledby="nav-home-btn">
+              <a href="index.html" role="menuitem">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                Home 1
+              </a>
+              <a href="home-2.html" role="menuitem" class="active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+                Home 2
+              </a>
+            </div>
+          </div>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="locations.html" class="nav-link">Locations</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-controls">
+          <a href="login.html" class="ctrl-btn-login" aria-label="Login to SparkWash" title="Sign In">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"
+              aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span class="ctrl-login-text">Login</span>
+          </a>
+          <button class="ctrl-btn" data-dir-toggle aria-label="Switch to RTL">RTL</button>
+          <button class="ctrl-btn" data-dark-toggle aria-label="Switch to dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+          <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Toggle menu">
+            <svg class="icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <div class="mobile-nav-item" data-accordion>
+      <button class="mobile-nav-link active" aria-expanded="false">
+        Home
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      <div class="mobile-submenu">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html" class="active">Home 2</a>
+      </div>
+    </div>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+    <a href="locations.html" class="mobile-nav-link">Locations</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <a href="login.html" class="mobile-nav-link">Login</a>
+    <div class="mobile-controls">
+      <button class="ctrl-btn" data-dark-toggle aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+      </button>
+      <button class="ctrl-btn" data-dir-toggle>RTL</button>
+    </div>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+    </div>
+  </nav>
+
+  <!-- PAGE -->
+  <main id="main-content" class="page-wrap">
+
+    <!-- ════════════════════════════════════
+         SECTION 1 — CINEMATIC HERO
+         ════════════════════════════════════ -->
+    <section class="h2-hero" aria-labelledby="h2-hero-heading">
+      <div class="h2-hero-bg" aria-hidden="true">
+        <img src="assets/images/hero/p9.jpg" alt="" loading="eager" />
+      </div>
+
+      <div class="h2-hero-content">
+        <div class="h2-hero-label animate-fadein">Self-Service Car Wash & Vacuum Station</div>
+        <h1 class="h2-hero-h1 animate-fadeup" id="h2-hero-heading">
+          Wash <em>Smarter,</em><br />Not Harder
+        </h1>
+        <p class="h2-hero-sub animate-fadeup delay-1">
+          Premium equipment. No waiting. No staff. Just you, your car, and everything you need to get a showroom-quality
+          clean — any time, any day.
+        </p>
+        <div class="h2-hero-ctas animate-fadeup delay-2">
+          <a href="services.html" class="btn btn-primary btn-lg">
+            Explore Services
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="locations.html" class="btn btn-ghost btn-lg">View Locations</a>
+        </div>
+      </div>
+
+      <a href="#stats-bar" class="h2-hero-scroll" aria-label="Scroll down to statistics">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="7 13 12 18 17 13" />
+          <polyline points="7 6 12 11 17 6" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="h2-stats-bar" id="stats-bar" role="region" aria-label="SparkWash statistics">
+      <div class="container">
+        <div class="h2-stats-bar-inner">
+          <div class="h2-stat-block animate-fadeup">
+            <div class="h2-stat-val" data-counter data-target="12" data-suffix="+">12+</div>
+            <div class="h2-stat-lbl">Locations Open</div>
+          </div>
+          <div class="h2-stat-block animate-fadeup delay-1">
+            <div class="h2-stat-val" data-counter data-target="50" data-suffix="K+">50K+</div>
+            <div class="h2-stat-lbl">Cars Washed</div>
+          </div>
+          <div class="h2-stat-block animate-fadeup delay-2">
+            <div class="h2-stat-val">24/7</div>
+            <div class="h2-stat-lbl">Always Open</div>
+          </div>
+          <div class="h2-stat-block animate-fadeup delay-3">
+            <div class="h2-stat-val" data-counter data-target="4" data-suffix=".9★">4.9★</div>
+            <div class="h2-stat-lbl">Google Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         SECTION 2 — SERVICES MOSAIC
+         ════════════════════════════════════ -->
+    <section class="h2-services section-pad" aria-labelledby="h2-svc-heading">
+      <div class="container">
+
+        <div class="h2-services-intro animate-fadeup">
+          <div class="eyebrow">What We Offer</div>
+          <h2 class="section-title" id="h2-svc-heading">Everything Your Car Needs</h2>
+          <p class="section-sub" style="margin:0 auto">From a quick exterior rinse to a full interior vacuum — SparkWash
+            has you covered with professional-grade equipment.</p>
+        </div>
+
+        <div class="h2-services-mosaic">
+
+          <!-- Tile 1: Self-Wash Bays (Large) -->
+          <a href="services.html#self-wash" class="svc-tile large animate-fadein" aria-label="Self-Service Wash Bays">
+            <div class="svc-tile-img">
+              <img src="assets/images/hero/p10.jpg" alt="Self-service wash bay with high-pressure wand"
+                loading="lazy" />
+            </div>
+            <div class="svc-tile-overlay" aria-hidden="true"></div>
+            <div class="svc-tile-caption">
+              <span class="svc-tile-badge">Service 01</span>
+              <h3 class="svc-tile-name">Self-Service Wash Bays</h3>
+            </div>
+          </a>
+
+          <!-- Tile 2: Vacuum Stations -->
+          <a href="services.html#vacuum" class="svc-tile animate-fadein delay-1"
+            aria-label="High-Power Vacuum Stations">
+            <div class="svc-tile-img">
+              <img src="assets/images/services/p11.jpg" alt="High-powered vacuum station for car interior"
+                loading="lazy" />
+            </div>
+            <div class="svc-tile-overlay" aria-hidden="true"></div>
+            <div class="svc-tile-caption">
+              <span class="svc-tile-badge">Service 02</span>
+              <h3 class="svc-tile-name">High-Power Vacuum Stations</h3>
+            </div>
+          </a>
+
+          <!-- Tile 3: Triple Foam Presoak -->
+          <a href="services.html#self-wash" class="svc-tile animate-fadein delay-2"
+            aria-label="Triple-Stage Foam Presoak">
+            <div class="svc-tile-img">
+              <img src="assets/images/services/p12.jpg" alt="Triple-stage foam presoak on vehicle" loading="lazy" />
+            </div>
+            <div class="svc-tile-overlay" aria-hidden="true"></div>
+            <div class="svc-tile-caption">
+              <span class="svc-tile-badge">Service 03</span>
+              <h3 class="svc-tile-name">Triple Foam Presoak</h3>
+            </div>
+          </a>
+
+          <!-- Tile 4: Fleet Washing -->
+          <a href="services.html#fleet" class="svc-tile animate-fadein delay-3" aria-label="Commercial Fleet Washing">
+            <div class="svc-tile-img">
+              <img src="assets/images/services/p13.jpg" alt="Commercial fleet washing bays" loading="lazy" />
+            </div>
+            <div class="svc-tile-overlay" aria-hidden="true"></div>
+            <div class="svc-tile-caption">
+              <span class="svc-tile-badge">Service 04</span>
+              <h3 class="svc-tile-name">Commercial Fleet Washing</h3>
+            </div>
+          </a>
+
+          <!-- Tile 5: 12+ Locations -->
+          <a href="locations.html" class="svc-tile animate-fadein delay-2" aria-label="12+ Locations Near You">
+            <div class="svc-tile-img">
+              <img src="assets/images/about/p14.jpg" alt="SparkWash exterior location view" loading="lazy" />
+            </div>
+            <div class="svc-tile-overlay" aria-hidden="true"></div>
+            <div class="svc-tile-caption">
+              <span class="svc-tile-badge">Locations</span>
+              <h3 class="svc-tile-name">12+ 24/7 Wash Locations</h3>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SECTION 3 — WHY CHOOSE US
+         ════════════════════════════════════ -->
+    <section class="h2-why section-pad" aria-labelledby="h2-why-heading">
+      <div class="container">
+        <div class="h2-why-layout">
+
+          <!-- Visual -->
+          <div class="h2-why-visual animate-fadein">
+            <div class="h2-why-img-main">
+              <img src="assets/images/sections/p15.jpg" alt="Customer washing their car at SparkWash bay"
+                loading="lazy" />
+            </div>
+            <div class="h2-why-img-accent">
+              <img src="assets/images/services/p16.jpg" alt="Vacuum station equipment" loading="lazy" />
+            </div>
+            <div class="h2-why-cert" aria-label="Years in business">
+              <div class="h2-why-cert-num">10+</div>
+              <div class="h2-why-cert-lbl">Years Serving<br />Customers</div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="animate-fadeup">
+            <div class="eyebrow" style="color:var(--clr-cyan)">Why SparkWash</div>
+            <h2 class="section-title" id="h2-why-heading" style="color:#fff">Built Different.<br />Cleaned Better.</h2>
+            <p style="color: rgba(255,255,255,0.95);font-size:1rem;line-height:1.75;margin-bottom:0.5rem">We're not just
+              another car wash. SparkWash is designed from the ground up to give you maximum control, premium results,
+              and zero hassle — every single visit.</p>
+
+            <div class="h2-why-points">
+              <div class="h2-why-point animate-fadeup delay-1">
+                <div class="h2-why-point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="h2-why-point-title">Commercial-Grade Equipment</div>
+                  <p class="h2-why-point-desc">Same pressure systems used by professional detailers — available to you
+                    at self-service pricing.</p>
+                </div>
+              </div>
+
+              <div class="h2-why-point animate-fadeup delay-2">
+                <div class="h2-why-point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="h2-why-point-title">Open 24 Hours, 365 Days</div>
+                  <p class="h2-why-point-desc">Wash on your schedule — whether that's 6 AM before work or midnight after
+                    a road trip.</p>
+                </div>
+              </div>
+
+              <div class="h2-why-point animate-fadeup delay-3">
+                <div class="h2-why-point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <line x1="2" y1="10" x2="22" y2="10" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="h2-why-point-title">Flexible Payment</div>
+                  <p class="h2-why-point-desc">Coins, bills, credit card, or contactless — we accept every payment
+                    method so you never get stuck.</p>
+                </div>
+              </div>
+
+              <div class="h2-why-point animate-fadeup delay-4">
+                <div class="h2-why-point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a2 2 0 012-2.18H8.5a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.58 15.5A16 16 0 0015.5 21.42l1.06-1.06a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="h2-why-point-title">On-Site Support Line</div>
+                  <p class="h2-why-point-desc">Having trouble? Our 24/7 support line connects you directly to a real
+                    person who can help right away.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-outline" style="margin-top:1rem">Learn Our Story</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SECTION 4 — PRICING TABLE
+         ════════════════════════════════════ -->
+    <section class="h2-pricing section-pad" aria-labelledby="h2-price-heading">
+      <div class="container">
+
+        <div class="h2-pricing-header animate-fadeup">
+          <div class="eyebrow">Transparent Pricing</div>
+          <h2 class="section-title" id="h2-price-heading">Simple, Clear Pricing</h2>
+          <p class="section-sub" style="margin:0 auto">No hidden fees. No surprises. Just choose what you need and pay
+            as you go.</p>
+        </div>
+
+        <div class="h2-pricing-table animate-fadeup delay-1" role="table" aria-label="Wash package comparison">
+          <!-- Header -->
+          <div class="h2-price-row header-row" role="row">
+            <span role="columnheader">Wash Package</span>
+            <span role="columnheader" style="text-align:center">Price/3 min</span>
+            <span role="columnheader" style="text-align:center">Foam Brush</span>
+            <span role="columnheader" style="text-align:center">Wax Coat</span>
+            <span role="columnheader"></span>
+          </div>
+
+          <!-- Row 1: Basic -->
+          <div class="h2-price-row" role="row">
+            <div class="h2-price-name" role="cell">
+              <div class="h2-price-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                </svg>
+              </div>
+              <div>
+                <div class="h2-price-label">Basic Rinse</div>
+                <div class="h2-price-sub">High-pressure rinse + pre-soak</div>
+              </div>
+            </div>
+            <div class="h2-price-val" role="cell">$3.00</div>
+            <div class="h2-price-check" role="cell">
+              <div class="no-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Not included">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+            </div>
+            <div class="h2-price-check" role="cell">
+              <div class="no-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Not included">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+            </div>
+            <div role="cell"><a href="pricing.html" class="btn btn-outline btn-sm">Select</a></div>
+          </div>
+
+          <!-- Row 2: Deluxe (featured) -->
+          <div class="h2-price-row featured-row" role="row">
+            <div class="h2-price-name" role="cell">
+              <div class="h2-price-badge" aria-hidden="true" style="background:rgba(0,194,255,0.15)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div>
+                <div class="h2-price-label">Deluxe Foam <span class="badge badge-cyan"
+                    style="vertical-align:middle;margin-inline-start:0.4rem">Popular</span></div>
+                <div class="h2-price-sub">Foam brush + spot-free rinse</div>
+              </div>
+            </div>
+            <div class="h2-price-val" role="cell" style="color:var(--clr-cyan)">$5.00</div>
+            <div class="h2-price-check" role="cell">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Included">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="h2-price-check" role="cell">
+              <div class="no-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Not included">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+            </div>
+            <div role="cell"><a href="pricing.html" class="btn btn-primary btn-sm">Select</a></div>
+          </div>
+
+          <!-- Row 3: Ceramic Pro -->
+          <div class="h2-price-row" role="row">
+            <div class="h2-price-name" role="cell">
+              <div class="h2-price-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <div>
+                <div class="h2-price-label">Ceramic Pro</div>
+                <div class="h2-price-sub">Full treatment + rain-repellent seal</div>
+              </div>
+            </div>
+            <div class="h2-price-val" role="cell">$7.00</div>
+            <div class="h2-price-check" role="cell">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Included">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="h2-price-check" role="cell">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Included">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div role="cell"><a href="pricing.html" class="btn btn-outline btn-sm">Select</a></div>
+          </div>
+
+          <!-- Row 4: Vacuum -->
+          <div class="h2-price-row" role="row">
+            <div class="h2-price-name" role="cell">
+              <div class="h2-price-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 21H3M21 12v9M3 21V12M3 3l9 9 9-9" />
+                </svg>
+              </div>
+              <div>
+                <div class="h2-price-label">Vacuum Station</div>
+                <div class="h2-price-sub">Industrial-strength interior vacuum</div>
+              </div>
+            </div>
+            <div class="h2-price-val" role="cell">$2.00 <span style="font-size:0.75rem;font-weight:400;opacity:0.6">/ 4
+                min</span></div>
+            <div class="h2-price-check" role="cell">—</div>
+            <div role="cell"><a href="pricing.html" class="btn btn-outline btn-sm">Select</a></div>
+          </div>
+        </div>
+
+        <p class="animate-fadein delay-2"
+          style="text-align:center;margin-top:1.5rem;font-size:0.85rem;color:var(--txt-muted)">
+          All prices per session increment. Add more time anytime — just insert more coins or tap your card.
+          <a href="pricing.html" style="color:var(--clr-cyan);font-weight:600;margin-inline-start:0.4rem">Full pricing
+            page →</a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SECTION 5 — LOCATION STATIONS SHOWCASE
+         ════════════════════════════════════ -->
+    <section class="h2-locations section-pad" aria-labelledby="h2-loc-heading">
+      <div class="container">
+
+        <div class="h2-locations-intro animate-fadeup">
+          <div class="eyebrow">Find Your Station</div>
+          <h2 class="section-title" id="h2-loc-heading">SparkWash Near You</h2>
+          <p class="section-sub">12 state-of-the-art self-service locations open 24/7 across the metropolitan area with
+            live bay monitoring, high-suction vacuums, and contactless checkout.</p>
+        </div>
+
+        <div class="h2-stations-grid">
+
+          <!-- Station 1 -->
+          <article class="h2-station-card animate-fadeup" aria-label="North Branch flagship location">
+            <div class="h2-station-img-wrap">
+              <img src="assets/images/about/p17.jpg" alt="SparkWash North Branch flagship station" loading="lazy" />
+              <div class="h2-station-live-badge">
+                <span class="h2-station-dot" aria-hidden="true"></span>
+                4 Bays Ready
+              </div>
+            </div>
+            <div class="h2-station-body">
+              <div class="h2-station-tag">Flagship Station 01</div>
+              <h3 class="h2-station-name">North Branch Hub</h3>
+              <div class="h2-station-addr">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                1200 North Ave, Cleantown, CA 90210
+              </div>
+              <div class="h2-station-pills">
+                <span class="h2-station-pill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  Open 24/7
+                </span>
+                <span class="h2-station-pill">4 Wash Bays</span>
+                <span class="h2-station-pill">3 Turbo Vacs</span>
+                <span class="h2-station-pill">Tap & Pay</span>
+              </div>
+              <div class="h2-station-actions">
+                <a href="https://maps.google.com/?q=1200+North+Ave+Cleantown+CA" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline btn-sm">Get Directions</a>
+                <a href="locations.html" class="btn btn-primary btn-sm">Station Info</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Station 2 -->
+          <article class="h2-station-card animate-fadeup delay-1" aria-label="Eastside Station location">
+            <div class="h2-station-img-wrap">
+              <img src="assets/images/bays/p18.jpg" alt="SparkWash Eastside station wash bays" loading="lazy" />
+              <div class="h2-station-live-badge">
+                <span class="h2-station-dot" aria-hidden="true"></span>
+                5 Bays Ready
+              </div>
+            </div>
+            <div class="h2-station-body">
+              <div class="h2-station-tag">Station 02</div>
+              <h3 class="h2-station-name">Eastside Commerce</h3>
+              <div class="h2-station-addr">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                450 East Commerce Blvd, Eastview, CA 90215
+              </div>
+              <div class="h2-station-pills">
+                <span class="h2-station-pill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  Open 24/7
+                </span>
+                <span class="h2-station-pill">5 Wash Bays</span>
+                <span class="h2-station-pill">4 Turbo Vacs</span>
+                <span class="h2-station-pill">Vending On-Site</span>
+              </div>
+              <div class="h2-station-actions">
+                <a href="https://maps.google.com/?q=450+East+Commerce+Blvd+Eastview+CA" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline btn-sm">Get Directions</a>
+                <a href="locations.html" class="btn btn-primary btn-sm">Station Info</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Station 3 -->
+          <article class="h2-station-card animate-fadeup delay-2" aria-label="Westpark Hub location">
+            <div class="h2-station-img-wrap">
+              <img src="assets/images/bays/p19.jpg" alt="SparkWash Westpark hub station" loading="lazy" />
+              <div class="h2-station-live-badge">
+                <span class="h2-station-dot" aria-hidden="true"></span>
+                6 Bays Ready
+              </div>
+            </div>
+            <div class="h2-station-body">
+              <div class="h2-station-tag">Station 03</div>
+              <h3 class="h2-station-name">Westpark Superhub</h3>
+              <div class="h2-station-addr">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                789 Westpark Drive, Westfield, CA 90218
+              </div>
+              <div class="h2-station-pills">
+                <span class="h2-station-pill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  Open 24/7
+                </span>
+                <span class="h2-station-pill">6 Wash Bays</span>
+                <span class="h2-station-pill">Fleet Ready</span>
+                <span class="h2-station-pill">High-Clearance</span>
+              </div>
+              <div class="h2-station-actions">
+                <a href="https://maps.google.com/?q=789+Westpark+Drive+Westfield+CA" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline btn-sm">Get Directions</a>
+                <a href="locations.html" class="btn btn-primary btn-sm">Station Info</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Bottom Banner -->
+        <div class="h2-stations-cta animate-fadein delay-3">
+          <div class="h2-stations-cta-text">
+            <div class="h2-stations-cta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="h2-stations-cta-h4">Looking for another SparkWash location?</h4>
+              <p class="h2-stations-cta-sub">We have 12 fully-automated stations across the metropolitan region — find
+                the closest one to your route.</p>
+            </div>
+          </div>
+          <a href="locations.html" class="btn btn-primary">
+            Explore All 12 Stations
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SECTION 6 — FRANCHISE CTA + FORM
+         ════════════════════════════════════ -->
+    <section class="h2-franchise section-pad" aria-labelledby="h2-franchise-heading">
+      <div class="container">
+        <div class="h2-franchise-inner">
+
+          <!-- Left -->
+          <div class="h2-franchise-left animate-fadeup">
+            <div class="eyebrow" style="color:var(--clr-cyan)">Own a SparkWash</div>
+            <h2 id="h2-franchise-heading">Start Your Own Franchise</h2>
+            <p>SparkWash franchise opportunities are open across the country. Low overhead, passive income potential,
+              and full operational support from day one.</p>
+
+            <div class="h2-franchise-perks">
+              <div class="h2-franchise-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Full equipment setup and installation included
+              </div>
+              <div class="h2-franchise-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Ongoing training, marketing, and technical support
+              </div>
+              <div class="h2-franchise-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Exclusive territory rights with no local competition
+              </div>
+              <div class="h2-franchise-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Proven business model with strong ROI track record
+              </div>
+              <div class="h2-franchise-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Minimal staffing — mostly automated operations
+              </div>
+            </div>
+
+            <div style="display:flex;gap:2.5rem;flex-wrap:wrap">
+              <div>
+                <div class="stat-num" style="font-size:2.2rem">$80K+</div>
+                <div
+                  style="font-size:0.8rem;color: #FFFFFF;font-family:var(--font-heading);font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-top:0.35rem">
+                  Starting Investment</div>
+              </div>
+              <div>
+                <div class="stat-num" style="font-size:2.2rem">12 mo</div>
+                <div
+                  style="font-size:0.8rem;color: #FFFFFF;font-family:var(--font-heading);font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-top:0.35rem">
+                  Avg. Payback Period</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="h2-franchise-form animate-fadeup delay-2">
+            <div class="h2-form-title">Request Franchise Info</div>
+            <div class="h2-form-sub">Fill in your details and our franchise team will be in touch within 48 hours.</div>
+
+            <form action="contact.html" method="get" novalidate>
+              <div class="h2-form-stack">
+                <div class="h2-form-row">
+                  <div class="form-group">
+                    <label for="fr-fname" class="form-label">First Name</label>
+                    <input type="text" id="fr-fname" name="first_name" class="form-input" placeholder="John"
+                      autocomplete="given-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="fr-lname" class="form-label">Last Name</label>
+                    <input type="text" id="fr-lname" name="last_name" class="form-input" placeholder="Smith"
+                      autocomplete="family-name" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="fr-email" class="form-label">Email Address</label>
+                  <input type="email" id="fr-email" name="email" class="form-input" placeholder="john@example.com"
+                    autocomplete="email" />
+                </div>
+
+                <div class="form-group">
+                  <label for="fr-phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="fr-phone" name="phone" class="form-input" placeholder="+1 (555) 000-0000"
+                    autocomplete="tel" />
+                </div>
+
+                <div class="form-group">
+                  <label for="fr-city" class="form-label">Preferred City / Region</label>
+                  <input type="text" id="fr-city" name="city" class="form-input" placeholder="e.g. Los Angeles, CA" />
+                </div>
+
+                <div class="form-group">
+                  <label for="fr-invest" class="form-label">Investment Readiness</label>
+                  <select id="fr-invest" name="investment" class="form-select">
+                    <option value="">Select a range</option>
+                    <option value="80-100k">$80K – $100K</option>
+                    <option value="100-150k">$100K – $150K</option>
+                    <option value="150k+">$150K+</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+                Send Enquiry
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (identical shared) -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-top">
+
+          <!-- Brand Column -->
+          <div class="footer-brand-col">
+            <div class="footer-brand">
+              <div class="brand-icon" aria-hidden="true">
+                <img src="assets/images/logo.jpg" alt="SparkWash Logo" />
+              </div>
+              <div class="brand-text">
+                <span class="brand-name">SparkWash</span>
+                <span class="brand-tagline">Car Wash & Vacuum</span>
+              </div>
+            </div>
+            <p class="footer-desc">Premium self-service car wash bays and vacuum stations open 24/7. Your clean car is
+              just a drive away.</p>
+            <div class="footer-socials" aria-label="Social media links">
+              <!-- Facebook -->
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <!-- Twitter/X -->
+              <a href="#" class="social-btn" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <!-- YouTube -->
+              <a href="#" class="social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 1.95C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 001.94-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
+                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="footer-col-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="footer-col-title">Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html#self-wash">Self-Wash Bays</a></li>
+              <li><a href="services.html#vacuum">Vacuum Stations</a></li>
+              <li><a href="services.html#vending">Vending Add-Ons</a></li>
+              <li><a href="services.html#fleet">Fleet Washing</a></li>
+              <li><a href="pricing.html">Wash Packages</a></li>
+              <li><a href="contact.html#franchise">Franchise Enquiry</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="footer-col-title">Contact</h3>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>123 Sparkway Ave, Cleantown, CA 90210</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.23 2 2 0 012.03 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <a href="tel:+18005727927" style="color:inherit">+1 (800) 572-7927</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:hello@sparkwash.com" style="color:inherit">hello@sparkwash.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Open 24 / 7 — 365 days</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 <span>SparkWash</span>. All rights reserved.</p>
+          <nav class="footer-legal" aria-label="Legal links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Accessibility</a>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

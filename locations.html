@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locations — SparkWash | Self-Service Car Wash & Vacuum Station</title>
+  <meta name="description"
+    content="Find your nearest SparkWash self-service car wash location. 12+ locations open 24/7 across the region — no appointment needed." />
+  <link rel="canonical" href="locations.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/locations.css" />
+  <script src="assets/js/theme-init.js"></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="site-loader" role="status">
+    <div class="loader-brand"><svg class="loader-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M7 16.5c-1.5 0-3-1.5-3-3s1.5-3 3-3h10c1.5 0 3 1.5 3 3s-1.5 3-3 3H7z" />
+        <path d="M7 10.5V7a5 5 0 0110 0v3.5" />
+        <circle cx="9" cy="19" r="1" />
+        <circle cx="15" cy="19" r="1" />
+      </svg>
+      <div class="loader-name">Spark<span>Wash</span></div>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <header id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-brand" aria-label="SparkWash Home">
+          <div class="brand-icon" aria-hidden="true"><img src="assets/images/logo.jpg" alt="SparkWash Logo" /></div>
+          <div class="brand-text"><span class="brand-name">SparkWash</span><span class="brand-tagline">Car Wash &
+              Vacuum</span></div>
+        </a>
+        <nav class="header-nav" role="navigation" aria-label="Primary navigation">
+          <div class="nav-item" data-dropdown><button class="nav-link" aria-expanded="false" aria-haspopup="true"
+              id="nav-home-btn">Home<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg></button>
+            <div class="nav-dropdown" role="menu" aria-labelledby="nav-home-btn"><a href="index.html"
+                role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>Home 1</a><a href="home-2.html" role="menuitem"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>Home 2</a></div>
+          </div>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="locations.html" class="nav-link active">Locations</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <a href="login.html" class="ctrl-btn-login" aria-label="Login to SparkWash" title="Sign In">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"
+              aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span class="ctrl-login-text">Login</span>
+          </a>
+          <button class="ctrl-btn" data-dir-toggle aria-label="Switch to RTL">RTL</button>
+          <button class="ctrl-btn" data-dark-toggle aria-label="Toggle dark mode"><svg class="icon-moon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg></button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+          <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Toggle menu">
+            <svg class="icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <div class="mobile-nav-item" data-accordion><button class="mobile-nav-link" aria-expanded="false">Home<svg
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9" />
+        </svg></button>
+      <div class="mobile-submenu"><a href="index.html">Home 1</a><a href="home-2.html">Home 2</a></div>
+    </div>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+    <a href="locations.html" class="mobile-nav-link active">Locations</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <a href="login.html" class="mobile-nav-link">Login</a>
+    <div class="mobile-controls"><button class="ctrl-btn" data-dark-toggle><svg class="icon-moon" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg></button><button class="ctrl-btn" data-dir-toggle>RTL</button></div>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary">Get Started Today</a></div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- SECTION 1 — HERO -->
+    <section class="loc-hero" aria-labelledby="loc-h1">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6" />
+          </svg><span>Locations</span></nav>
+        <div class="eyebrow animate-fadeup" style="justify-content:center;color:var(--clr-cyan)">Find Us</div>
+        <h1 class="animate-fadeup delay-1" id="loc-h1">12+ SparkWash Locations<br />Open 24/7</h1>
+        <p class="animate-fadeup delay-2">No booking, no waiting. Drive in and start washing at any of our locations
+          across the region.</p>
+        <div class="loc-search animate-fadeup delay-2" role="search" aria-label="Search locations">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input type="search" id="loc-search-input" placeholder="Enter your city or zip code..."
+            aria-label="Search by city or zip code" />
+          <a href="#locations-grid" class="btn btn-primary btn-sm">Search</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — LOCATIONS GRID -->
+    <section class="section-pad" id="locations-grid" aria-labelledby="loc-grid-heading">
+      <div class="container">
+        <div
+          style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3rem;flex-wrap:wrap"
+          class="animate-fadeup">
+          <div>
+            <div class="eyebrow">All Stations</div>
+            <h2 class="section-title" id="loc-grid-heading">Our Locations</h2>
+          </div>
+          <div class="bay-status bay-available" style="font-size:0.85rem">
+            <span class="bay-dot" aria-hidden="true"></span>
+            All locations operational
+          </div>
+        </div>
+
+        <div class="loc-grid">
+
+          <article class="loc-card animate-fadeup" aria-label="North Branch location">
+            <div class="loc-card-img">
+              <img src="assets/images/hero/p30.jpg" alt="North Branch SparkWash exterior" loading="lazy" />
+              <div class="loc-card-img-overlay" aria-hidden="true"></div>
+              <div class="loc-card-status">
+                <div class="bay-status bay-available"><span class="bay-dot" aria-hidden="true"></span>Open</div>
+              </div>
+            </div>
+            <div class="loc-card-body">
+              <div class="loc-num">Location 01</div>
+              <div class="loc-name">North Branch</div>
+              <address class="loc-addr" style="font-style:normal">1200 North Ave, Cleantown, CA 90210</address>
+              <div class="loc-amenities">
+                <span class="loc-amenity">4 Wash Bays</span>
+                <span class="loc-amenity">3 Vacuums</span>
+                <span class="loc-amenity">Vending</span>
+                <span class="loc-amenity">24/7</span>
+              </div>
+              <div class="loc-footer">
+                <a href="tel:+18005727927" class="btn btn-outline" aria-label="Call North Branch">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg>
+                  Call
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  aria-label="Get directions to North Branch">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="loc-card animate-fadeup delay-1" aria-label="Eastside Station location">
+            <div class="loc-card-img">
+              <img src="assets/images/hero/p31.jpg" alt="Eastside Station SparkWash exterior" loading="lazy" />
+              <div class="loc-card-img-overlay" aria-hidden="true"></div>
+              <div class="loc-card-status">
+                <div class="bay-status bay-available"><span class="bay-dot" aria-hidden="true"></span>Open</div>
+              </div>
+            </div>
+            <div class="loc-card-body">
+              <div class="loc-num">Location 02</div>
+              <div class="loc-name">Eastside Station</div>
+              <address class="loc-addr" style="font-style:normal">450 East Commerce Blvd, Eastview, CA 90215</address>
+              <div class="loc-amenities">
+                <span class="loc-amenity">5 Wash Bays</span>
+                <span class="loc-amenity">4 Vacuums</span>
+                <span class="loc-amenity">Vending</span>
+                <span class="loc-amenity">24/7</span>
+              </div>
+              <div class="loc-footer">
+                <a href="tel:+18005727927" class="btn btn-outline" aria-label="Call Eastside Station">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg>
+                  Call
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  aria-label="Directions to Eastside Station">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="loc-card animate-fadeup delay-2" aria-label="Westpark Hub location">
+            <div class="loc-card-img">
+              <img src="assets/images/about/p32.jpg" alt="Westpark Hub SparkWash exterior" loading="lazy" />
+              <div class="loc-card-img-overlay" aria-hidden="true"></div>
+              <div class="loc-card-status">
+                <div class="bay-status bay-available"><span class="bay-dot" aria-hidden="true"></span>Open</div>
+              </div>
+            </div>
+            <div class="loc-card-body">
+              <div class="loc-num">Location 03</div>
+              <div class="loc-name">Westpark Hub</div>
+              <address class="loc-addr" style="font-style:normal">789 Westpark Drive, Westfield, CA 90218</address>
+              <div class="loc-amenities">
+                <span class="loc-amenity">6 Wash Bays</span>
+                <span class="loc-amenity">4 Vacuums</span>
+                <span class="loc-amenity">Vending</span>
+                <span class="loc-amenity">24/7</span>
+              </div>
+              <div class="loc-footer">
+                <a href="tel:+18005727927" class="btn btn-outline" aria-label="Call Westpark Hub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg>
+                  Call
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  aria-label="Directions to Westpark Hub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="loc-card animate-fadeup delay-3" aria-label="Southgate location">
+            <div class="loc-card-img">
+              <img src="assets/images/services/p33.jpg" alt="Southgate SparkWash" loading="lazy" />
+              <div class="loc-card-img-overlay" aria-hidden="true"></div>
+              <div class="loc-card-status">
+                <div class="bay-status bay-available"><span class="bay-dot" aria-hidden="true"></span>Open</div>
+              </div>
+            </div>
+            <div class="loc-card-body">
+              <div class="loc-num">Location 04</div>
+              <div class="loc-name">Southgate Plaza</div>
+              <address class="loc-addr" style="font-style:normal">321 South Commerce St, Southgate, CA 90222</address>
+              <div class="loc-amenities">
+                <span class="loc-amenity">3 Wash Bays</span>
+                <span class="loc-amenity">2 Vacuums</span>
+                <span class="loc-amenity">Vending</span>
+                <span class="loc-amenity">24/7</span>
+              </div>
+              <div class="loc-footer">
+                <a href="tel:+18005727927" class="btn btn-outline" aria-label="Call Southgate Plaza">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg>
+                  Call
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  aria-label="Directions to Southgate Plaza">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="loc-card animate-fadeup delay-4" aria-label="Midtown location">
+            <div class="loc-card-img">
+              <img src="assets/images/services/p34.jpg" alt="Midtown SparkWash" loading="lazy" />
+              <div class="loc-card-img-overlay" aria-hidden="true"></div>
+              <div class="loc-card-status">
+                <div class="bay-status bay-available"><span class="bay-dot" aria-hidden="true"></span>Open</div>
+              </div>
+            </div>
+            <div class="loc-card-body">
+              <div class="loc-num">Location 05</div>
+              <div class="loc-name">Midtown Express</div>
+              <address class="loc-addr" style="font-style:normal">88 Center Blvd, Midtown, CA 90225</address>
+              <div class="loc-amenities">
+                <span class="loc-amenity">4 Wash Bays</span>
+                <span class="loc-amenity">3 Vacuums</span>
+                <span class="loc-amenity">Vending</span>
+                <span class="loc-amenity">24/7</span>
+              </div>
+              <div class="loc-footer">
+                <a href="tel:+18005727927" class="btn btn-outline" aria-label="Call Midtown Express">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg>
+                  Call
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  aria-label="Directions to Midtown Express">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="loc-card animate-fadeup delay-5" aria-label="Highway Rest location">
+            <div class="loc-card-img">
+              <img src="assets/images/sections/p35.jpg" alt="Highway Rest SparkWash" loading="lazy" />
+              <div class="loc-card-img-overlay" aria-hidden="true"></div>
+              <div class="loc-card-status">
+                <div class="bay-status bay-available"><span class="bay-dot" aria-hidden="true"></span>Open</div>
+              </div>
+            </div>
+            <div class="loc-card-body">
+              <div class="loc-num">Location 06</div>
+              <div class="loc-name">Highway Rest Stop</div>
+              <address class="loc-addr" style="font-style:normal">I-10 Exit 44, Clearwater, CA 90230</address>
+              <div class="loc-amenities">
+                <span class="loc-amenity">8 Wash Bays</span>
+                <span class="loc-amenity">6 Vacuums</span>
+                <span class="loc-amenity">Vending</span>
+                <span class="loc-amenity">24/7</span>
+              </div>
+              <div class="loc-footer">
+                <a href="tel:+18005727927" class="btn btn-outline" aria-label="Call Highway Rest Stop">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg>
+                  Call
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  aria-label="Directions to Highway Rest Stop">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center animate-fadeup delay-3" style="margin-top:3rem">
+          <p style="color:var(--txt-muted);font-size:0.9rem;margin-bottom:1rem">Showing 6 of 12 locations. More
+            locations coming soon!</p>
+          <a href="contact.html" class="btn btn-outline">Request a Location Near You</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — HOURS + INFO -->
+    <section class="section-pad bg-alt-section" aria-labelledby="hours-heading">
+      <div class="container">
+        <div class="grid-2col-resp animate-fadeup" style="align-items:start">
+          <div>
+            <div class="eyebrow">Operating Hours</div>
+            <h2 class="section-title" id="hours-heading">We Never Close</h2>
+            <p class="section-sub" style="max-width:100%">Every SparkWash location operates 24 hours a day, 7 days a
+              week, 365 days a year — including public holidays.</p>
+            <div class="card table-responsive" style="padding:0;margin-top:2rem;">
+              <table class="hours-table" aria-label="Operating hours">
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                  <tr>
+                    <td>Public Holidays</td>
+                    <td>Open 24 Hours</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:1.5rem">
+            <div class="eyebrow">Good to Know</div>
+            <h2 class="section-title" style="font-size:1.6rem">Location Policies</h2>
+            <div style="display:flex;flex-direction:column;gap:1.25rem">
+              <div style="display:flex;gap:1rem;align-items:flex-start">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg></div>
+                <div>
+                  <div
+                    style="font-family:var(--font-heading);font-weight:800;color:var(--txt-heading);margin-bottom:0.3rem">
+                    Safety & Lighting</div>
+                  <p style="font-size:0.88rem;color:var(--txt-muted);line-height:1.65">All locations are fully lit 24/7
+                    with CCTV coverage for your safety.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg></div>
+                <div>
+                  <div
+                    style="font-family:var(--font-heading);font-weight:800;color:var(--txt-heading);margin-bottom:0.3rem">
+                    No Time Limit</div>
+                  <p style="font-size:0.88rem;color:var(--txt-muted);line-height:1.65">Take as long as you need — just
+                    add more time tokens when your session nears the end.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <line x1="2" y1="10" x2="22" y2="10" />
+                  </svg></div>
+                <div>
+                  <div
+                    style="font-family:var(--font-heading);font-weight:800;color:var(--txt-heading);margin-bottom:0.3rem">
+                    Cashless Friendly</div>
+                  <p style="font-size:0.88rem;color:var(--txt-muted);line-height:1.65">Tap your card or phone — all
+                    major cards and contactless accepted at every bay.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8" />
+                  </svg></div>
+                <div>
+                  <div
+                    style="font-family:var(--font-heading);font-weight:800;color:var(--txt-heading);margin-bottom:0.3rem">
+                    24/7 Phone Support</div>
+                  <p style="font-size:0.88rem;color:var(--txt-muted);line-height:1.65">Equipment issue? Call <a
+                      href="tel:+18005727927" style="color:var(--clr-cyan);font-weight:700">+1 (800) 572-7927</a> any
+                    time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — COMING SOON -->
+    <section class="section-pad" aria-labelledby="soon-heading">
+      <div class="container">
+        <div class="text-center animate-fadeup" style="max-width:560px;margin:0 auto 3rem">
+          <div class="eyebrow" style="justify-content:center">Expanding Soon</div>
+          <h2 class="section-title" id="soon-heading">More Locations Coming Your Way</h2>
+          <p class="section-sub" style="margin:0 auto">We're expanding! 6 more SparkWash stations are under development
+            in new areas. Sign up to be notified when we open near you.</p>
+        </div>
+        <div style="max-width:500px;margin:0 auto;display:flex;gap:0.75rem;flex-wrap:wrap"
+          class="animate-fadeup delay-1">
+          <input type="email" placeholder="Enter your email address" class="form-input" style="flex:1;min-width:200px"
+            aria-label="Email for location alerts" />
+          <a href="contact.html" class="btn btn-primary">Notify Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — CTA STRIP -->
+    <div class="loc-cta-strip" role="region" aria-label="Call to action">
+      <div class="container">
+        <h2 class="animate-fadeup">No Appointment Needed.<br />Just Drive In.</h2>
+        <p class="animate-fadeup delay-1">All SparkWash locations accept walk-in customers 24/7. Find the nearest bay
+          and start washing today.</p>
+        <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap" class="animate-fadeup delay-2">
+          <a href="pricing.html" class="btn btn-white"
+            style="background:#fff;color:var(--clr-royal);font-weight:700">View Wash Packages</a>
+          <a href="contact.html" class="btn btn-white-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-top">
+
+          <!-- Brand Column -->
+          <div class="footer-brand-col">
+            <div class="footer-brand">
+              <div class="brand-icon" aria-hidden="true">
+                <img src="assets/images/logo.jpg" alt="SparkWash Logo" />
+              </div>
+              <div class="brand-text">
+                <span class="brand-name">SparkWash</span>
+                <span class="brand-tagline">Car Wash & Vacuum</span>
+              </div>
+            </div>
+            <p class="footer-desc">Premium self-service car wash bays and vacuum stations open 24/7. Your clean car is
+              just a drive away.</p>
+            <div class="footer-socials" aria-label="Social media links">
+              <!-- Facebook -->
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <!-- Twitter/X -->
+              <a href="#" class="social-btn" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <!-- YouTube -->
+              <a href="#" class="social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 1.95C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 001.94-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
+                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="footer-col-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="footer-col-title">Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html#self-wash">Self-Wash Bays</a></li>
+              <li><a href="services.html#vacuum">Vacuum Stations</a></li>
+              <li><a href="services.html#vending">Vending Add-Ons</a></li>
+              <li><a href="services.html#fleet">Fleet Washing</a></li>
+              <li><a href="pricing.html">Wash Packages</a></li>
+              <li><a href="contact.html#franchise">Franchise Enquiry</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="footer-col-title">Contact</h3>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>123 Sparkway Ave, Cleantown, CA 90210</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.23 2 2 0 012.03 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <a href="tel:+18005727927" style="color:inherit">+1 (800) 572-7927</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:hello@sparkwash.com" style="color:inherit">hello@sparkwash.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Open 24 / 7 — 365 days</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 <span>SparkWash</span>. All rights reserved.</p>
+          <nav class="footer-legal" aria-label="Legal links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Accessibility</a>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
