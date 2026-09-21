@@ -1,64 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
   <link rel="shortcut icon" href="assets/images/favicon.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing — SparkWash | Self-Service Car Wash & Vacuum Station</title>
-  <meta name="description" content="Transparent pricing for SparkWash self-service wash bays, vacuum stations, and add-ons. Choose from Basic, Deluxe, or Ceramic Pro packages — starting from $2."/>
-  <link rel="canonical" href="pricing.html"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <link rel="stylesheet" href="assets/css/responsive.css"/>
-  <link rel="stylesheet" href="assets/css/pricing.css"/>
+  <meta name="description"
+    content="Transparent pricing for SparkWash self-service wash bays, vacuum stations, and add-ons. Choose from Basic, Deluxe, or Ceramic Pro packages — starting from $2." />
+  <link rel="canonical" href="pricing.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/pricing.css" />
   <script src="assets/js/theme-init.js"></script>
 </head>
+
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div id="site-loader" role="status"><div class="loader-brand"><svg class="loader-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 16.5c-1.5 0-3-1.5-3-3s1.5-3 3-3h10c1.5 0 3 1.5 3 3s-1.5 3-3 3H7z"/><path d="M7 10.5V7a5 5 0 0110 0v3.5"/><circle cx="9" cy="19" r="1"/><circle cx="15" cy="19" r="1"/></svg><div class="loader-name">Spark<span>Wash</span></div></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+  <div id="site-loader" role="status" aria-label="Loading SparkWash">
+    <div class="loader-brand">
+      <div class="brand-icon loader-brand-icon" aria-hidden="true">
+        <img src="assets/images/logo.jpg" alt="SparkWash Logo" />
+      </div>
+      <div class="loader-name">Spark<span>Wash</span></div>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
 
   <header id="site-header" role="banner">
-    <div class="container"><div class="header-inner">
-      <a href="index.html" class="header-brand" aria-label="SparkWash Home"><div class="brand-icon" aria-hidden="true"><img src="assets/images/logo.jpg" alt="SparkWash Logo" /></div><div class="brand-text"><span class="brand-name">SparkWash</span><span class="brand-tagline">Car Wash & Vacuum</span></div></a>
-      <nav class="header-nav" role="navigation" aria-label="Primary navigation">
-        <div class="nav-item" data-dropdown><button class="nav-link" aria-expanded="false" aria-haspopup="true" id="nav-home-btn">Home<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-dropdown" role="menu" aria-labelledby="nav-home-btn"><a href="index.html" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Home 1</a><a href="home-2.html" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Home 2</a></div></div>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="pricing.html" class="nav-link active">Pricing</a>
-        <a href="locations.html" class="nav-link">Locations</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-controls">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-brand" aria-label="SparkWash Home">
+          <div class="brand-icon" aria-hidden="true"><img src="assets/images/logo.jpg" alt="SparkWash Logo" /></div>
+          <div class="brand-text"><span class="brand-name">SparkWash</span><span class="brand-tagline">Car Wash &
+              Vacuum</span></div>
+        </a>
+        <nav class="header-nav" role="navigation" aria-label="Primary navigation">
+          <div class="nav-item" data-dropdown><button class="nav-link" aria-expanded="false" aria-haspopup="true"
+              id="nav-home-btn">Home<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg></button>
+            <div class="nav-dropdown" role="menu" aria-labelledby="nav-home-btn"><a href="index.html"
+                role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>Home 1</a><a href="home-2.html" role="menuitem"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>Home 2</a></div>
+          </div>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link active">Pricing</a>
+          <a href="locations.html" class="nav-link">Locations</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-controls">
           <a href="login.html" class="ctrl-btn-login" aria-label="Login to SparkWash" title="Sign In">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15" aria-hidden="true">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"
+              aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
             </svg>
             <span class="ctrl-login-text">Login</span>
           </a>
           <button class="ctrl-btn" data-dir-toggle aria-label="Switch to RTL">RTL</button>
-        <button class="ctrl-btn" data-dark-toggle aria-label="Toggle dark mode"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
-        <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
-                  <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
-            <svg class="icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <button class="ctrl-btn" data-dark-toggle aria-label="Toggle dark mode"><svg class="icon-moon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg></button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+          <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Toggle menu">
+            <svg class="icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
           </button>
+        </div>
       </div>
-    </div></div>
+    </div>
   </header>
 
-  <nav id="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <div class="mobile-nav-item" data-accordion><button class="mobile-nav-link" aria-expanded="false">Home<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="mobile-submenu"><a href="index.html">Home 1</a><a href="home-2.html">Home 2</a></div></div>
-    <a href="services.html" class="mobile-nav-link">Services</a>
-    <a href="pricing.html" class="mobile-nav-link active">Pricing</a>
-    <a href="locations.html" class="mobile-nav-link">Locations</a>
-    <a href="about.html" class="mobile-nav-link">About</a>
-    <a href="contact.html" class="mobile-nav-link">Contact</a>
-    <a href="login.html" class="mobile-nav-link">Login</a>
-    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary">Get Started Today</a></div>
+  <!-- Mobile Menu Backdrop -->
+  <div id="mobile-menu-backdrop" class="mobile-menu-backdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Menu Drawer -->
+  <nav id="mobile-menu" class="mobile-menu-drawer" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="mobile-brand">
+        <div class="brand-icon" aria-hidden="true">
+          <img src="assets/images/logo.jpg" alt="SparkWash Logo" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">SparkWash</span>
+          <span class="brand-tagline">Car Wash & Vacuum</span>
+        </div>
+      </div>
+      <button id="menu-close" class="mobile-close-btn" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu-body">
+      <!-- Home accordion -->
+      <div class="mobile-nav-item" data-accordion>
+        <button class="mobile-nav-link" aria-expanded="false" aria-haspopup="true">
+          <span class="mobile-nav-link-content">
+            <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <span>Home</span>
+          </span>
+          <svg class="mobile-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="mobile-submenu" role="group">
+          <a href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <span>Home 1 (Classic)</span>
+          </a>
+          <a href="home-2.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            <span>Home 2 (Modern)</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="services.html" class="mobile-nav-link">
+        <span class="mobile-nav-link-content">
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+            <polyline points="2 17 12 22 22 17" />
+            <polyline points="2 12 12 17 22 12" />
+          </svg>
+          <span>Services</span>
+        </span>
+      </a>
+
+      <a href="pricing.html" class="mobile-nav-link active">
+        <span class="mobile-nav-link-content">
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <line x1="12" y1="1" x2="12" y2="23" />
+            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+          </svg>
+          <span>Pricing</span>
+        </span>
+      </a>
+
+      <a href="locations.html" class="mobile-nav-link">
+        <span class="mobile-nav-link-content">
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Locations</span>
+        </span>
+      </a>
+
+      <a href="about.html" class="mobile-nav-link">
+        <span class="mobile-nav-link-content">
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+          </svg>
+          <span>About</span>
+        </span>
+      </a>
+
+      <a href="contact.html" class="mobile-nav-link">
+        <span class="mobile-nav-link-content">
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a2 2 0 012-2.18H8.5a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.58 15.5A16 16 0 0015.5 21.42l1.06-1.06a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          <span>Contact</span>
+        </span>
+      </a>
+
+      <a href="login.html" class="mobile-nav-link">
+        <span class="mobile-nav-link-content">
+          <svg class="mobile-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span>Login / Portal</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <div class="mobile-footer-actions">
+        <button class="mobile-action-btn" data-dir-toggle aria-label="Toggle RTL layout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"
+            aria-hidden="true">
+            <polyline points="16 3 21 8 16 13" />
+            <line x1="21" y1="8" x2="3" y2="8" />
+            <polyline points="8 21 3 16 8 11" />
+            <line x1="3" y1="16" x2="21" y2="16" />
+          </svg>
+          <span>RTL Mode</span>
+        </button>
+        <button class="mobile-action-btn" data-dark-toggle aria-label="Toggle Dark Mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15"
+            height="15" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15"
+            height="15" aria-hidden="true" style="display:none">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <span>Theme</span>
+        </button>
+      </div>
+
+      <div class="mobile-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started Today</a>
+      </div>
+
+      <div class="mobile-support-info">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>Open 24/7 &bull; Support: (800) 572-7927</span>
+      </div>
+    </div>
   </nav>
 
   <main id="main-content">
@@ -66,10 +290,14 @@
     <!-- HERO -->
     <section class="pricing-hero" aria-labelledby="pricing-h1">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg><span>Pricing</span></nav>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6" />
+          </svg><span>Pricing</span></nav>
         <div class="eyebrow animate-fadeup" style="justify-content:center">Simple Pricing</div>
-        <h1 class="animate-fadeup delay-1" id="pricing-h1">Transparent Pricing,<br/>Zero Surprises</h1>
-        <p class="animate-fadeup delay-2">Pay as you go — no membership, no contracts. Choose your package and start washing.</p>
+        <h1 class="animate-fadeup delay-1" id="pricing-h1">Transparent Pricing,<br />Zero Surprises</h1>
+        <p class="animate-fadeup delay-2">Pay as you go — no membership, no contracts. Choose your package and start
+          washing.</p>
       </div>
     </section>
 
@@ -79,7 +307,8 @@
         <div class="text-center animate-fadeup" style="max-width:550px;margin:0 auto">
           <div class="eyebrow" style="justify-content:center">Wash Packages</div>
           <h2 class="section-title" id="pkgs-heading">Choose Your Wash Level</h2>
-          <p class="section-sub" style="margin:0 auto">All packages are priced per 3-minute session increment. Need more time? Just add coins.</p>
+          <p class="section-sub" style="margin:0 auto">All packages are priced per 3-minute session increment. Need more
+            time? Just add coins.</p>
         </div>
 
         <div class="pricing-cards-grid">
@@ -94,12 +323,33 @@
             <div class="p-unit">per 3 minutes</div>
             <div class="p-divider"></div>
             <ul class="p-features" aria-label="Basic Rinse inclusions">
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>High-pressure water rinse</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Triple-foam pre-soak</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Standard rinse cycle</li>
-              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Foam brush access</li>
-              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Spot-free rinse</li>
-              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Wax coating</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>High-pressure water rinse</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Triple-foam pre-soak</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Standard rinse cycle</li>
+              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>Foam brush access</li>
+              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>Spot-free rinse</li>
+              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>Wax coating</li>
             </ul>
             <a href="locations.html" class="btn btn-outline p-btn">Select & Find Location</a>
           </article>
@@ -115,12 +365,32 @@
             <div class="p-unit">per 3 minutes</div>
             <div class="p-divider"></div>
             <ul class="p-features">
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>High-pressure water rinse</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Triple-foam pre-soak</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Foam brush access</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Spot-free final rinse</li>
-              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Ceramic wax coating</li>
-              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Rain-repellent sealant</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>High-pressure water rinse</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Triple-foam pre-soak</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Foam brush access</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Spot-free final rinse</li>
+              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>Ceramic wax coating</li>
+              <li class="p-feat no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>Rain-repellent sealant</li>
             </ul>
             <a href="locations.html" class="btn p-btn p-btn-featured">Select & Find Location</a>
           </article>
@@ -135,12 +405,30 @@
             <div class="p-unit">per 3 minutes</div>
             <div class="p-divider"></div>
             <ul class="p-features">
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>All Deluxe inclusions</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Ceramic wax coating</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Rain-repellent sealant</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Tire shine spray stage</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Triple-brush foam stage</li>
-              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Spot-free deionized rinse</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>All Deluxe inclusions</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Ceramic wax coating</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Rain-repellent sealant</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Tire shine spray stage</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Triple-brush foam stage</li>
+              <li class="p-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Spot-free deionized rinse</li>
             </ul>
             <a href="locations.html" class="btn btn-primary p-btn">Select & Find Location</a>
           </article>
@@ -149,78 +437,751 @@
       </div>
     </section>
 
-    <!-- SECTION 2 — ADD-ONS TABLE -->
+    <!-- =========================================================
+     SECTION 2 — ADD-ONS / EXTRA SERVICES
+     Modern Responsive Card Layout
+     ========================================================= -->
     <section class="section-pad bg-alt-section" aria-labelledby="addon-heading">
+
       <div class="container">
-        <div class="text-center animate-fadeup" style="max-width:640px;margin:0 auto 3rem">
-          <div class="eyebrow" style="justify-content:center">A La Carte</div>
-          <h2 class="section-title" id="addon-heading">Additional Services &amp; Add-Ons</h2>
+
+        <!-- Section Header -->
+        <div class="text-center animate-fadeup" style="max-width:680px;margin:0 auto 3rem">
+          <div class="eyebrow" style="justify-content:center">
+            A La Carte
+          </div>
+
+          <h2 class="section-title" id="addon-heading">
+            Additional Services &amp; Add-Ons
+          </h2>
+
+          <p class="addon-header-desc" style="
+          max-width:600px;
+          margin:1rem auto 0;
+          color: #1E293B;
+          font-weight: 500;
+          line-height:1.7;
+        ">
+            Enhance your car wash experience with convenient cleaning,
+            finishing and interior care add-ons.
+          </p>
         </div>
 
-        <div class="card table-responsive animate-fadein" style="padding:0">
-          <table class="addon-table" aria-label="Additional services pricing">
-            <thead>
-              <tr>
-                <th scope="col">Service</th>
-                <th scope="col">Duration</th>
-                <th scope="col">Price</th>
-                <th scope="col">Payment</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><div class="addon-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 21H3M21 12v9M3 21V12M3 3l9 9 9-9"/></svg>Standard Vacuum</div>Interior vacuum station access</td>
-                <td>4 min</td>
-                <td class="addon-price">$2.00</td>
-                <td>Coins / Card</td>
-              </tr>
-              <tr>
-                <td><div class="addon-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>Turbo Vacuum</div>High-power industrial suction</td>
-                <td>4 min</td>
-                <td class="addon-price">$3.00</td>
-                <td>Coins / Card</td>
-              </tr>
-              <tr>
-                <td><div class="addon-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/></svg>Air Freshener</div>Hanging card — 3 scent options</td>
-                <td>—</td>
-                <td class="addon-price">$1.50</td>
-                <td>Coins / Card</td>
-              </tr>
-              <tr>
-                <td><div class="addon-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>Microfiber Cloth Pack</div>2-pack, ultra-soft lint-free</td>
-                <td>—</td>
-                <td class="addon-price">$2.50</td>
-                <td>Coins / Card</td>
-              </tr>
-              <tr>
-                <td><div class="addon-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>Paste Wax Applicator</div>Single-use wax + pad</td>
-                <td>—</td>
-                <td class="addon-price">$3.50</td>
-                <td>Coins / Card</td>
-              </tr>
-              <tr>
-                <td><div class="addon-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg>Tire Shine Can</div>Quick-dry spray, long-lasting gloss</td>
-                <td>—</td>
-                <td class="addon-price">$4.00</td>
-                <td>Coins / Card</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <!-- =====================================================
+         ADD-ON GRID
+         ===================================================== -->
+        <div class="addon-grid animate-fadein" role="list" aria-label="Additional services">
+
+
+          <!-- CARD 01 -->
+          <article class="addon-card" role="listitem">
+
+            <div class="addon-card-top">
+
+              <div class="addon-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 21H3M21 12v9M3 21V12M3 3l9 9 9-9" />
+                </svg>
+              </div>
+
+              <span class="addon-number">01</span>
+
+            </div>
+
+            <div class="addon-content">
+
+              <h3>Standard Vacuum</h3>
+
+              <p>
+                Interior vacuum station access for quick and convenient
+                cabin cleaning.
+              </p>
+
+            </div>
+
+            <div class="addon-footer">
+
+              <div class="addon-meta">
+                <span>Duration</span>
+                <strong>4 min</strong>
+              </div>
+
+              <div class="addon-price">
+                $2.00
+              </div>
+
+            </div>
+
+            <div class="addon-payment">
+              Coins / Card
+            </div>
+
+          </article>
+
+
+          <!-- CARD 02 -->
+          <article class="addon-card" role="listitem">
+
+            <div class="addon-card-top">
+
+              <div class="addon-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v8M8 12h8" />
+                </svg>
+              </div>
+
+              <span class="addon-number">02</span>
+
+            </div>
+
+            <div class="addon-content">
+
+              <h3>Turbo Vacuum</h3>
+
+              <p>
+                High-power industrial suction for deeper interior
+                cleaning and hard-to-reach areas.
+              </p>
+
+            </div>
+
+            <div class="addon-footer">
+
+              <div class="addon-meta">
+                <span>Duration</span>
+                <strong>4 min</strong>
+              </div>
+
+              <div class="addon-price">
+                $3.00
+              </div>
+
+            </div>
+
+            <div class="addon-payment">
+              Coins / Card
+            </div>
+
+          </article>
+
+
+          <!-- CARD 03 -->
+          <article class="addon-card" role="listitem">
+
+            <div class="addon-card-top">
+
+              <div class="addon-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 12h8" />
+                </svg>
+              </div>
+
+              <span class="addon-number">03</span>
+
+            </div>
+
+            <div class="addon-content">
+
+              <h3>Air Freshener</h3>
+
+              <p>
+                Refresh your vehicle interior with a hanging air
+                freshener available in three scent options.
+              </p>
+
+            </div>
+
+            <div class="addon-footer">
+
+              <div class="addon-meta">
+                <span>Duration</span>
+                <strong>—</strong>
+              </div>
+
+              <div class="addon-price">
+                $1.50
+              </div>
+
+            </div>
+
+            <div class="addon-payment">
+              Coins / Card
+            </div>
+
+          </article>
+
+
+          <!-- CARD 04 -->
+          <article class="addon-card" role="listitem">
+
+            <div class="addon-card-top">
+
+              <div class="addon-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <path d="M4 22v-7" />
+                </svg>
+              </div>
+
+              <span class="addon-number">04</span>
+
+            </div>
+
+            <div class="addon-content">
+
+              <h3>Microfiber Cloth Pack</h3>
+
+              <p>
+                Two ultra-soft, lint-free microfiber cloths for
+                safe and effective vehicle cleaning.
+              </p>
+
+            </div>
+
+            <div class="addon-footer">
+
+              <div class="addon-meta">
+                <span>Pack</span>
+                <strong>2-Pack</strong>
+              </div>
+
+              <div class="addon-price">
+                $2.50
+              </div>
+
+            </div>
+
+            <div class="addon-payment">
+              Coins / Card
+            </div>
+
+          </article>
+
+
+          <!-- CARD 05 -->
+          <article class="addon-card" role="listitem">
+
+            <div class="addon-card-top">
+
+              <div class="addon-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+
+              <span class="addon-number">05</span>
+
+            </div>
+
+            <div class="addon-content">
+
+              <h3>Paste Wax Applicator</h3>
+
+              <p>
+                Single-use wax application kit with a dedicated pad
+                for an enhanced exterior finish.
+              </p>
+
+            </div>
+
+            <div class="addon-footer">
+
+              <div class="addon-meta">
+                <span>Type</span>
+                <strong>Single Use</strong>
+              </div>
+
+              <div class="addon-price">
+                $3.50
+              </div>
+
+            </div>
+
+            <div class="addon-payment">
+              Coins / Card
+            </div>
+
+          </article>
+
+
+          <!-- CARD 06 -->
+          <article class="addon-card" role="listitem">
+
+            <div class="addon-card-top">
+
+              <div class="addon-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" />
+                  <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                </svg>
+              </div>
+
+              <span class="addon-number">06</span>
+
+            </div>
+
+            <div class="addon-content">
+
+              <h3>Tire Shine Can</h3>
+
+              <p>
+                Quick-dry tire spray that adds a clean, glossy finish
+                and long-lasting shine.
+              </p>
+
+            </div>
+
+            <div class="addon-footer">
+
+              <div class="addon-meta">
+                <span>Type</span>
+                <strong>Quick Dry</strong>
+              </div>
+
+              <div class="addon-price">
+                $4.00
+              </div>
+
+            </div>
+
+            <div class="addon-payment">
+              Coins / Card
+            </div>
+
+          </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+     ADD-ON RESPONSIVE STYLES
+     ========================================================= -->
+    <style>
+      /* ================================
+     GRID
+     ================================ */
+
+      .addon-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+        width: 100%;
+      }
+
+
+      /* ================================
+     CARD
+     ================================ */
+
+      .addon-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        overflow: hidden;
+
+        padding: 1.6rem;
+
+        border: 1px solid rgba(0, 87, 255, .16);
+        border-radius: 1.1rem;
+
+        background: #FFFFFF;
+        box-shadow: 0 4px 20px rgba(0, 31, 102, .06);
+
+        transition:
+          transform .3s ease,
+          border-color .3s ease,
+          box-shadow .3s ease;
+      }
+
+
+      .addon-card:hover {
+        transform: translateY(-5px);
+
+        border-color: rgba(0, 87, 255, .45);
+
+        box-shadow:
+          0 18px 40px rgba(0, 87, 255, .15);
+      }
+
+
+      /* ================================
+     CARD TOP
+     ================================ */
+
+      .addon-card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        margin-bottom: 1.25rem;
+      }
+
+
+      /* ================================
+     ICON
+     ================================ */
+
+      .addon-icon {
+        width: 3.2rem;
+        height: 3.2rem;
+
+        flex: 0 0 3.2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: .85rem;
+
+        background: rgba(0, 194, 255, .12);
+        color: #0057FF;
+        border: 1px solid rgba(0, 194, 255, .28);
+      }
+
+
+      .addon-icon svg {
+        width: 1.45rem;
+        height: 1.45rem;
+      }
+
+
+      /* ================================
+     NUMBER
+     ================================ */
+
+      .addon-number {
+        font-family: var(--font-heading);
+        font-size: .82rem;
+        font-weight: 800;
+        letter-spacing: .06em;
+        color: #0057FF;
+        background: rgba(0, 87, 255, .08);
+        padding: 0.25rem 0.65rem;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 87, 255, .18);
+        line-height: 1;
+      }
+
+
+      /* ================================
+     CONTENT
+     ================================ */
+
+      .addon-content {
+        flex: 1;
+      }
+
+
+      .addon-content h3 {
+        margin: 0;
+
+        font-family: var(--font-heading);
+        font-size: 1.25rem;
+        line-height: 1.35;
+        font-weight: 700;
+        color: #000D33;
+      }
+
+
+      .addon-content p {
+        margin: .65rem 0 0;
+
+        font-size: .92rem;
+        line-height: 1.65;
+        color: #1E293B;
+        font-weight: 500;
+      }
+
+
+      /* ================================
+     FOOTER
+     ================================ */
+
+      .addon-footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1rem;
+
+        margin-top: 1.5rem;
+        padding-top: 1.2rem;
+
+        border-top: 1px solid rgba(0, 87, 255, .12);
+      }
+
+
+      .addon-meta {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+
+        min-width: 0;
+      }
+
+
+      .addon-meta span {
+        font-size: .72rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        font-weight: 700;
+        color: #0057FF;
+      }
+
+
+      .addon-meta strong {
+        font-family: var(--font-heading);
+        font-size: .95rem;
+        font-weight: 700;
+        color: #000D33;
+      }
+
+
+      /* ================================
+     PRICE
+     ================================ */
+
+      .addon-price {
+        flex-shrink: 0;
+
+        font-family: var(--font-heading);
+        font-size: 1.45rem;
+        line-height: 1;
+
+        font-weight: 800;
+        letter-spacing: -.02em;
+        color: #0070F3;
+      }
+
+
+      /* ================================
+     PAYMENT
+     ================================ */
+
+      .addon-payment {
+        margin-top: .9rem;
+
+        font-size: .78rem;
+        line-height: 1.4;
+        font-weight: 600;
+        color: #1E293B;
+
+        background: #EEF4FF;
+        border: 1px solid rgba(0, 87, 255, .16);
+        padding: 0.3rem 0.7rem;
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+      }
+
+
+      /* =====================================================
+     DARK MODE SUPPORT
+     ===================================================== */
+
+      .dark-mode .addon-card {
+        background: #061226;
+        border-color: rgba(0, 194, 255, .22);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, .5);
+      }
+
+      .dark-mode .addon-card:hover {
+        border-color: var(--clr-cyan);
+        box-shadow: 0 16px 40px rgba(0, 194, 255, .2);
+      }
+
+      .dark-mode .addon-icon {
+        background: rgba(0, 194, 255, .16);
+        color: var(--clr-cyan-light);
+        border-color: rgba(0, 194, 255, .35);
+      }
+
+      .dark-mode .addon-number {
+        color: var(--clr-cyan-light);
+        background: rgba(0, 194, 255, .15);
+        border-color: rgba(0, 194, 255, .35);
+      }
+
+      .dark-mode .addon-content h3 {
+        color: #FFFFFF;
+      }
+
+      .dark-mode .addon-content p {
+        color: #E2E8F0;
+        font-weight: 400;
+      }
+
+      .dark-mode .addon-footer {
+        border-top-color: rgba(0, 194, 255, .2);
+      }
+
+      .dark-mode .addon-meta span {
+        color: var(--clr-cyan);
+      }
+
+      .dark-mode .addon-meta strong {
+        color: #FFFFFF;
+      }
+
+      .dark-mode .addon-price {
+        color: var(--clr-cyan-light);
+      }
+
+      .dark-mode .addon-payment {
+        color: #E2E8F0;
+        background: rgba(0, 194, 255, .14);
+        border-color: rgba(0, 194, 255, .28);
+      }
+
+      .dark-mode .addon-header-desc {
+        color: #D2E7FF !important;
+      }
+
+
+      /* =====================================================
+     TABLET
+     ===================================================== */
+
+      @media (max-width: 1024px) {
+
+        .addon-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 1rem;
+        }
+
+        .addon-card {
+          padding: 1.35rem;
+        }
+
+      }
+
+
+      /* =====================================================
+     SMALL TABLET
+     ===================================================== */
+
+      @media (max-width: 768px) {
+
+        .addon-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .addon-card {
+          padding: 1.25rem;
+          border-radius: .9rem;
+        }
+
+        .addon-content h3 {
+          font-size: 1.05rem;
+        }
+
+        .addon-content p {
+          font-size: .88rem;
+        }
+
+        .addon-price {
+          font-size: 1.25rem;
+        }
+
+      }
+
+
+      /* =====================================================
+     MOBILE
+     ===================================================== */
+
+      @media (max-width: 560px) {
+
+        .addon-grid {
+          grid-template-columns: 1fr;
+          gap: .9rem;
+        }
+
+        .addon-card {
+          padding: 1.25rem;
+        }
+
+        .addon-card:hover {
+          transform: none;
+        }
+
+      }
+
+
+      /* =====================================================
+     SMALL MOBILE — 360px
+     ===================================================== */
+
+      @media (max-width: 380px) {
+
+        .addon-card {
+          padding: 1rem;
+        }
+
+        .addon-card-top {
+          margin-bottom: 1rem;
+        }
+
+        .addon-icon {
+          width: 2.75rem;
+          height: 2.75rem;
+          flex-basis: 2.75rem;
+        }
+
+        .addon-icon svg {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+
+        .addon-content h3 {
+          font-size: 1rem;
+        }
+
+        .addon-content p {
+          font-size: .84rem;
+          line-height: 1.55;
+        }
+
+        .addon-footer {
+          margin-top: 1.2rem;
+          padding-top: 1rem;
+        }
+
+        .addon-price {
+          font-size: 1.15rem;
+        }
+
+      }
+    </style>
 
     <!-- SECTION 3 — GUARANTEE -->
     <section class="section-pad bg-dark-section" aria-labelledby="guarantee-heading">
       <div class="container" style="max-width:900px;margin:0 auto">
         <div class="guarantee-box animate-fadein">
           <div class="guarantee-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
           </div>
           <div class="guarantee-text">
             <h3 id="guarantee-heading">Our Equipment Guarantee</h3>
-            <p>Every SparkWash station is maintained to commercial detailing standards. If any equipment malfunctions during your session, we'll issue a full refund credit and schedule emergency repairs within 4 hours. Your satisfaction is guaranteed — no exceptions.</p>
-            <a href="contact.html" class="btn" style="background:rgba(255,255,255,0.15);color:#fff;border-color: rgba(255,255,255,0.75);margin-top:1.25rem">Contact Support</a>
+            <p>Every SparkWash station is maintained to commercial detailing standards. If any equipment malfunctions
+              during your session, we'll issue a full refund credit and schedule emergency repairs within 4 hours. Your
+              satisfaction is guaranteed — no exceptions.</p>
+            <a href="contact.html" class="btn"
+              style="background:rgba(255,255,255,0.15);color:#fff;border-color: rgba(255,255,255,0.75);margin-top:1.25rem">Contact
+              Support</a>
           </div>
         </div>
       </div>
@@ -236,20 +1197,54 @@
 
         <div class="faq-grid accordion-group">
           <div class="accordion-item animate-fadeup">
-            <button class="accordion-header" aria-expanded="false">How long does a session last?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-            <div class="accordion-body"><div class="accordion-body-inner">Sessions are priced per 3-minute increment. You can add more time at any point by inserting additional coins or tapping your card at the bay panel — the timer simply continues.</div></div>
+            <button class="accordion-header" aria-expanded="false">How long does a session last?<svg
+                class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Sessions are priced per 3-minute increment. You can add more time at any
+                point by inserting additional coins or tapping your card at the bay panel — the timer simply continues.
+              </div>
+            </div>
           </div>
           <div class="accordion-item animate-fadeup delay-1">
-            <button class="accordion-header" aria-expanded="false">What payment methods are accepted?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-            <div class="accordion-body"><div class="accordion-body-inner">All bays accept coins (quarters), $1 and $5 bills, credit/debit cards, and contactless (Apple Pay, Google Pay). No cash? No problem.</div></div>
+            <button class="accordion-header" aria-expanded="false">What payment methods are accepted?<svg
+                class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">All bays accept coins (quarters), $1 and $5 bills, credit/debit cards,
+                and contactless (Apple Pay, Google Pay). No cash? No problem.</div>
+            </div>
           </div>
           <div class="accordion-item animate-fadeup delay-2">
-            <button class="accordion-header" aria-expanded="false">Are there membership or loyalty programs?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-            <div class="accordion-body"><div class="accordion-body-inner">Currently SparkWash operates on a pay-as-you-go model with no membership required. Fleet accounts for businesses can access volume discounts — contact us for details.</div></div>
+            <button class="accordion-header" aria-expanded="false">Are there membership or loyalty programs?<svg
+                class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Currently SparkWash operates on a pay-as-you-go model with no membership
+                required. Fleet accounts for businesses can access volume discounts — contact us for details.</div>
+            </div>
           </div>
           <div class="accordion-item animate-fadeup delay-3">
-            <button class="accordion-header" aria-expanded="false">Can I get a refund if equipment fails?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-            <div class="accordion-body"><div class="accordion-body-inner">Yes. If equipment malfunctions mid-session, call our 24/7 support line (+1 800 572-7927). We will issue a credit refund to your account or refund card within 24 hours, no questions asked.</div></div>
+            <button class="accordion-header" aria-expanded="false">Can I get a refund if equipment fails?<svg
+                class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Yes. If equipment malfunctions mid-session, call our 24/7 support line
+                (+1 800 572-7927). We will issue a credit refund to your account or refund card within 24 hours, no
+                questions asked.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -291,23 +1286,37 @@
                 <span class="brand-tagline">Car Wash & Vacuum</span>
               </div>
             </div>
-            <p class="footer-desc">Premium self-service car wash bays and vacuum stations open 24/7. Your clean car is just a drive away.</p>
+            <p class="footer-desc">Premium self-service car wash bays and vacuum stations open 24/7. Your clean car is
+              just a drive away.</p>
             <div class="footer-socials" aria-label="Social media links">
               <!-- Facebook -->
               <a href="#" class="social-btn" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                </svg>
               </a>
               <!-- Instagram -->
               <a href="#" class="social-btn" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
               </a>
               <!-- Twitter/X -->
               <a href="#" class="social-btn" aria-label="X (Twitter)">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
               </a>
               <!-- YouTube -->
               <a href="#" class="social-btn" aria-label="YouTube">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 1.95C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 001.94-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#000"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 1.95C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 001.94-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
+                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#000" />
+                </svg>
               </a>
             </div>
           </div>
@@ -343,19 +1352,31 @@
           <div>
             <h3 class="footer-col-title">Contact</h3>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
               <span>123 Sparkway Ave, Cleantown, CA 90210</span>
             </div>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.23 2 2 0 012.03 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.23 2 2 0 012.03 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
               <a href="tel:+18005727927" style="color:inherit">+1 (800) 572-7927</a>
             </div>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
               <a href="mailto:hello@sparkwash.com" style="color:inherit">hello@sparkwash.com</a>
             </div>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
               <span>Open 24 / 7 — 365 days</span>
             </div>
           </div>
@@ -375,7 +1396,11 @@
     </div>
   </footer>
 
-  <button id="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <button id="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg></button>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

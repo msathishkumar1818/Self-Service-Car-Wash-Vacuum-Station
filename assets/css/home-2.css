@@ -556,6 +556,17 @@
       color: rgba(255,255,255,0.12);
     }
 
+    .h2-price-row [role="cell"]:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .h2-price-row .btn {
+      min-width: 92px;
+      text-align: center;
+      justify-content: center;
+    }
+
     /* ─── SECTION 5 — LOCATION FINDER ─── */
     /* ─── SECTION 5 — LOCATION STATIONS SHOWCASE (NO MAP) ─── */
     .h2-locations {

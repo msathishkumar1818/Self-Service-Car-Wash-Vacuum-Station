@@ -78,9 +78,9 @@
   initDir();
 
   /* ── MOBILE MENU ─────────────────────────────────────── */
-  const mobileMenu = document.getElementById('mobile-menu');
-  const menuBtn    = document.getElementById('menu-btn');
-  const menuClose  = document.getElementById('menu-close');
+  const mobileMenu     = document.getElementById('mobile-menu');
+  const mobileBackdrop = document.getElementById('mobile-menu-backdrop');
+  const menuBtn        = document.getElementById('menu-btn');
 
   function toggleMenu() {
     if (!mobileMenu) return;
@@ -94,6 +94,11 @@
   function openMenu() {
     if (!mobileMenu) return;
     mobileMenu.classList.add('open');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.add('open');
+      mobileBackdrop.setAttribute('aria-hidden', 'false');
+    }
     if (menuBtn) {
       menuBtn.setAttribute('aria-expanded', 'true');
       menuBtn.classList.add('active');
@@ -104,6 +109,11 @@
   function closeMenu() {
     if (!mobileMenu) return;
     mobileMenu.classList.remove('open');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.remove('open');
+      mobileBackdrop.setAttribute('aria-hidden', 'true');
+    }
     if (menuBtn) {
       menuBtn.setAttribute('aria-expanded', 'false');
       menuBtn.classList.remove('active');
@@ -115,11 +125,18 @@
     e.stopPropagation();
     toggleMenu();
   });
-  menuClose && menuClose.addEventListener('click', closeMenu);
 
-
+  document.querySelectorAll('#menu-close, .mobile-close-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeMenu();
+    });
+  });
 
   // Close on backdrop click (outside menu)
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', closeMenu);
+  }
   mobileMenu && mobileMenu.addEventListener('click', (e) => {
     if (e.target === mobileMenu) closeMenu();
   });
@@ -300,6 +317,15 @@
       return target === page;
     }
 
+    // Clear any pre-existing active classes
+    document.querySelectorAll('.header-nav .nav-link, .nav-dropdown a, #mobile-menu .mobile-nav-link, #mobile-menu .mobile-submenu a').forEach(link => {
+      link.classList.remove('active');
+    });
+    const headerHomeBtn = document.getElementById('nav-home-btn');
+    if (headerHomeBtn) headerHomeBtn.classList.remove('active');
+    const mobileHomeBtn = document.querySelector('#mobile-menu .mobile-nav-item .mobile-nav-link');
+    if (mobileHomeBtn) mobileHomeBtn.classList.remove('active');
+
     // Desktop nav items
     const navLinks = document.querySelectorAll('.header-nav .nav-link, .nav-dropdown a');
     navLinks.forEach(link => {
@@ -315,8 +341,7 @@
     });
 
     if (page === 'index.html' || page === 'home-2.html') {
-      const homeBtn = document.getElementById('nav-home-btn');
-      if (homeBtn) homeBtn.classList.add('active');
+      if (headerHomeBtn) headerHomeBtn.classList.add('active');
     }
 
     // Mobile nav items

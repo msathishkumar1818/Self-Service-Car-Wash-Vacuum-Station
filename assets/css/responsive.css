@@ -252,6 +252,7 @@ img, svg, video, canvas {
   .addon-table td {
     padding: 0.75rem 0.85rem;
     font-size: 0.84rem;
+    white-space: nowrap;
   }
 
   .hours-table td {
@@ -335,9 +336,19 @@ img, svg, video, canvas {
     height: 36px;
   }
 
+  #mobile-menu.mobile-menu-drawer,
+  #mobile-menu {
+    width: 290px;
+    max-width: 92vw;
+  }
+
+  .mobile-menu-body {
+    padding: 0.85rem 0.9rem;
+  }
+
   .mobile-nav-link {
-    font-size: 1rem;
-    padding: 0.75rem 0.85rem;
+    font-size: 0.92rem;
+    padding: 0.65rem 0.75rem;
   }
 
   .p-card {
