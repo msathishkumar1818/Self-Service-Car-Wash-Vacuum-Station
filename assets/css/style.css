@@ -1506,10 +1506,24 @@ button.mobile-nav-link,
 .footer-brand-col {}
 
 .footer-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.65rem;
   margin-bottom: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--ease-fast, 0.2s ease), opacity var(--ease-fast, 0.2s ease);
+}
+
+.footer-brand:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.footer-brand:focus-visible {
+  outline: 2px solid var(--clr-cyan);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
 }
 
 .footer-brand .brand-icon {
