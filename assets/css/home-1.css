@@ -3,7 +3,9 @@
     /* HERO */
     .hero-home {
       min-height: 100svh;
-      background: var(--grad-hero);
+      background: 
+        linear-gradient(135deg, rgba(0, 13, 51, 0.90) 0%, rgba(0, 26, 102, 0.82) 45%, rgba(0, 63, 204, 0.65) 100%),
+        url('../images/hero/p31.jpg') center/cover no-repeat;
       position: relative;
       overflow: hidden;
       display: flex;
@@ -323,6 +325,15 @@
       height: 160px;
       overflow: hidden;
       background: var(--clr-navy-deep);
+    }
+
+    .bay-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(6, 14, 36, 0.45) 0%, transparent 45%, rgba(6, 14, 36, 0.25) 100%);
+      pointer-events: none;
+      z-index: 1;
     }
 
     .bay-img {

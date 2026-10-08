@@ -5,8 +5,13 @@
 .loc-hero {
   background: 
     linear-gradient(180deg, rgba(6, 14, 36, 0.88) 0%, rgba(6, 14, 36, 0.78) 50%, rgba(6, 14, 36, 0.95) 100%),
-    url('../images/sections/locations-hero.jpg') center/cover no-repeat;
-  padding: calc(var(--header-h) + 5rem) 0 5rem;
+    url('../images/about/p32.jpg') center/cover no-repeat;
+  min-height: var(--hero-subpage-h, 480px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: calc(var(--header-h) + 2.5rem) 0 3rem;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -127,13 +132,15 @@
 .loc-card-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 13, 51, 0.5) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(6, 14, 36, 0.45) 0%, transparent 45%, rgba(0, 13, 51, 0.55) 100%);
+  pointer-events: none;
 }
 
 .loc-card-status {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  z-index: 2;
 }
 
 [dir="rtl"] .loc-card-status {
@@ -198,6 +205,15 @@
   justify-content: center;
   font-size: 0.82rem;
   padding: 0.55rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.loc-footer .btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 /* Hours table */

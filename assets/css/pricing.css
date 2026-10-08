@@ -5,8 +5,13 @@
 .pricing-hero {
   background: 
     linear-gradient(180deg, rgba(6, 14, 36, 0.88) 0%, rgba(6, 14, 36, 0.80) 50%, rgba(6, 14, 36, 0.95) 100%),
-    url('../images/sections/pricing-hero.jpg') center/cover no-repeat;
-  padding: calc(var(--header-h) + 5rem) 0 5rem;
+    url('../images/sections/p35.jpg') center/cover no-repeat;
+  min-height: var(--hero-subpage-h, 480px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: calc(var(--header-h) + 2.5rem) 0 3rem;
   position: relative;
   overflow: hidden;
   text-align: center;

@@ -51,9 +51,11 @@ img, svg, video, canvas {
 
 /* ─── 1024px and below (iPad, iPad Air, Tablets) ──────────── */
 @media (max-width: 1024px) {
-  .header-nav,
-  .header-controls .btn-primary,
-  .ctrl-btn-login {
+  :root {
+    --hero-subpage-h: 440px;
+  }
+
+  .header-nav {
     display: none !important;
   }
 
@@ -112,6 +114,7 @@ img, svg, video, canvas {
 @media (max-width: 768px) {
   :root {
     --header-h: 58px;
+    --hero-subpage-h: 400px;
   }
 
   .container {
@@ -208,15 +211,10 @@ img, svg, video, canvas {
 
 /* ─── 540px and below (Pixel 7/8/9/10, iPhone 12/13/14/15/16 Pro) ─── */
 @media (max-width: 540px) {
-  /* Compact Login Button in Navbar: hide text, show icon square */
-  .ctrl-login-text {
-    display: none !important;
-  }
 
-  .ctrl-btn-login {
-    padding: 0 !important;
-    width: 36px !important;
-    justify-content: center !important;
+  .header-controls .header-cta,
+  .header-controls .btn-primary {
+    display: none !important;
   }
 
   .header-controls {
@@ -265,6 +263,7 @@ img, svg, video, canvas {
 @media (max-width: 425px) {
   :root {
     --header-h: 56px;
+    --hero-subpage-h: 360px;
   }
 
   .container {
@@ -321,19 +320,16 @@ img, svg, video, canvas {
   }
 
   .ctrl-btn {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
     font-size: 0.68rem;
   }
 
-  .ctrl-btn-login {
-    width: 32px !important;
-    height: 32px !important;
-  }
 
   .menu-btn {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   #mobile-menu.mobile-menu-drawer,
